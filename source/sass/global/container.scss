@@ -1,18 +1,25 @@
 .container {
   width: 100%;
-  max-width: 1920px;
+  max-width: 1366px;
   margin: 0 auto;
-  padding: 0 40px;
+  padding: 0 103px;
 
-  @include vp-1439 {
-    padding: 0 32px;
-  }
-
-  @include vp-1023 {
-    padding: 0 24px;
+  @include vp-1365 {
+    padding: 0 45px;
   }
 
   @include vp-767 {
-    padding: 0 16px;
+    padding: 0 15px;
+  }
+}
+
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  &--bg {
+    background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   }
 }
