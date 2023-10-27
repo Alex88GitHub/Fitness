@@ -23,3 +23,11 @@
     background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   }
 }
+
+.container__hero {
+  padding-bottom: 120px;
+
+  &--bg {
+    background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+  }
+}

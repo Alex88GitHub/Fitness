@@ -1,17 +1,26 @@
 .btn {
   display: inline-flex;
-  padding: 10px 20px;
-
+  padding: 25px 54px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
   color: $color-default-white;
 
   background-color: $color-neon-blue;
-  border: none;
+  border: 2px solid #ffffff;
   cursor: pointer;
 
   transition: opacity $trans-default;
 
   &--red {
     background-color: $color-torch-red;
+  }
+
+  &--hero {
+    background-color: transparent;
   }
 
   &:disabled {

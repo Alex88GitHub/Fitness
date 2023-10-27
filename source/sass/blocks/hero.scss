@@ -1,0 +1,41 @@
+.hero {
+  display: flex;
+  gap: 70px;
+  flex-wrap: wrap;
+}
+
+.hero__text-block {
+  // display: flex;
+  // align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: repeat(3, auto);
+  padding-top: 62px;
+  padding-bottom: 62px;
+  // text-align: right;
+}
+
+.hero__description-wrapper {
+  width: fit-content;
+  align-self: center;
+}
+
+.hero__description {
+  color: #ffffff;
+}
+
+.hero__title-wrapper {
+  width: 270px;
+  text-align: right;
+}
+
+.hero__title-city {
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.hero__title {
+  margin-bottom: 50px;
+  color: #ffffff;
+  text-transform: uppercase;
+}

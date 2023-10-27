@@ -8,15 +8,17 @@
   <meta name="description" content="сайт фитнес-центра Supergym">
   <title>Fitness</title>
   <link rel="stylesheet" href="css/style.min.css">
-  <link rel="preload" href="fonts/alumni-sans-v18-latin-regular.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-v18-latin-600.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-v18-latin-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-v27-latin-300.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-600.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-v27-latin-regular.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-800.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-condensed-v27-latin-700.woff2" as="font" type="font/woff2"
+  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-300.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
+  <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="favicon.ico">
@@ -34,6 +36,36 @@
       </div>
     </header>
     <main>
+      <div class="container container__hero container__hero--bg">
+        <section class="hero">
+          <div class="hero__text-block">
+            <div class="hero__description-wrapper">
+              <p class="hero__description description">Тренажёрный зал</p>
+              <p class="hero__description description">Групповые занятия</p>
+              <p class="hero__description description">Кардио-зона</p>
+            </div>
+            <div class="hero__title-wrapper">
+              <h2 class="hero__title-city title">Омск</h2>
+              <h1 class="hero__title title">Фитнес центр</h1>
+              <button class="btn btn--hero" type="button">Купить абонемент</button>
+            </div>
+          </div>
+          <img src="img/hero-image.png" width="500" height="524" alt="">
+        </section>
+      </div>
+      <div class="container">
+        <section class="training-gym">
+          <div class="training-gym__text-content">
+            <h2>Тренажерный зал</h2>
+            <h3>Просторный зал площадью 900 кв/м</h3>
+            <p>Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
+              Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.</p>
+            <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
+              несколько оборудованных залов для различных видов групповых занятий. </p>
+          </div>
+          <img src="img/training-gym-photo.png" width="660" height="401" alt="">
+        </section>
+      </div>
 
     </main>
     <footer>
@@ -42,7 +74,7 @@
   </div>
 
   <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
+  <!-- <div class="modal modal--preload" data-modal="feedback">
     <div class="modal__wrapper">
       <div class="modal__overlay" data-close-modal></div>
       <div class="modal__content">
@@ -68,7 +100,7 @@
         </button>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
