@@ -1,0 +1,32 @@
+.tickets {
+  position: relative;
+  z-index: 2;
+  padding: 120px 0 120px;
+}
+
+.tickets__time-list-wrapper {
+  text-align: center;
+}
+
+.tickets__title {
+  margin-bottom: 38px;
+  text-align: center;
+}
+
+.tickets__time-list {
+  margin-bottom: 27px;
+}
+
+.tickets__visits-list {
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  column-gap: 40px;
+  row-gap: 40px;
+}
+
+.tickets__bg {
+  position: absolute;
+  z-index: 1;
+  bottom: -150px;
+  right: 0;
+}

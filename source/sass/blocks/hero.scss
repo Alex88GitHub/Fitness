@@ -5,14 +5,11 @@
 }
 
 .hero__text-block {
-  // display: flex;
-  // align-items: center;
   display: grid;
   grid-template-columns: repeat(2, auto);
   grid-template-rows: repeat(3, auto);
   padding-top: 62px;
   padding-bottom: 62px;
-  // text-align: right;
 }
 
 .hero__description-wrapper {

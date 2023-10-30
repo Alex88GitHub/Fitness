@@ -47,8 +47,7 @@ video {
 }
 
 h1,
-h2,
-h3 {
+h2 {
   font-family: "Alumni", "Arial", sans-serif;
 }
 
@@ -64,6 +63,13 @@ h2 {
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 1.62px;
+}
+
+h3 {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
 }
 
 textarea {

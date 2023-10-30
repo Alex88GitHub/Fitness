@@ -28,7 +28,7 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <div class="container container__header container__header--bg">
+      <div class="container container--header">
         <a href="">
           <img src="img/svg/logo.svg" width="120" height="26" alt="Логотип Supergym.">
         </a>
@@ -36,7 +36,7 @@
       </div>
     </header>
     <main>
-      <div class="container container__hero container__hero--bg">
+      <div class="container container--hero">
         <section class="hero">
           <div class="hero__text-block">
             <div class="hero__description-wrapper">
@@ -47,7 +47,7 @@
             <div class="hero__title-wrapper">
               <h2 class="hero__title-city title">Омск</h2>
               <h1 class="hero__title title">Фитнес центр</h1>
-              <button class="btn btn--hero" type="button">Купить абонемент</button>
+              <button class="btn btn--hero-buy" type="button">Купить абонемент</button>
             </div>
           </div>
           <img src="img/hero-image.png" width="500" height="524" alt="">
@@ -65,6 +65,76 @@
           </div>
           <img src="img/training-gym-photo.png" width="660" height="401" alt="">
         </section>
+      </div>
+      <div class="container container--tickets">
+        <section class="tickets">
+          <h2 class="tickets__title title">Абонементы</h2>
+          <div class="tickets__time-list-wrapper">
+            <ul class="tickets__time-list time-list">
+              <li class="time-list__item time-list-item time-list-item--current">1 месяц</li>
+              <li class="time-list__item time-list-item">6 месяцев</li>
+              <li class="time-list__item time-list-item">12 месяцев</li>
+            </ul>
+          </div>
+          <ul class="tickets__visits-list visits-list">
+            <li class="visits-list__item visits-item">
+              <h3 class="visits-item__title title">С тренером</h3>
+              <span class="visits-item__description">12 занятий</span>
+              <div class="visits-item__price-wrapper" data-count="5000">
+                <p class="visits-item__price-title title">5000</p>
+                <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                    fill="#102654" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                    fill="#102654" />
+                </svg>
+              </div>
+              <a class="visits-item__btn btn btn--tickets-buy" href="#">Купить абонемент</a>
+            </li>
+            <li class="visits-list__item visits-item visits-item--current">
+              <h3 class="visits-item__title title">Дневной</h3>
+              <span class="visits-item__description">с 8:00 до 17:00</span>
+              <div class="visits-item__price-wrapper" data-count="1700">
+                <p class="visits-item__price-title title">1700</p>
+                <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                    fill="#102654" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                    fill="#102654" />
+                </svg>
+              </div>
+              <a class="visits-item__btn btn btn--tickets-buy" href="#">Купить
+                абонемент</a>
+            </li>
+            <li class="visits-list__item visits-item">
+              <h3 class="visits-item__title title">Полный день</h3>
+              <span class="visits-item__description">с 8:00 до 22:00</span>
+              <div class="visits-item__price-wrapper" data-count="2700">
+                <p class="visits-item__price-title title">2700</p>
+                <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
+                    fill="#102654" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
+                    fill="#102654" />
+                </svg>
+              </div>
+              <a class="visits-item__btn btn btn--tickets-buy" href="#">Купить абонемент</a>
+            </li>
+          </ul>
+        </section>
+        <img class="tickets__bg" src="img/disks.png" width="287" height="494" alt="">
       </div>
 
     </main>
