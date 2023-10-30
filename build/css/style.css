@@ -631,6 +631,10 @@ button,
   position: relative;
   background-color: #f8f9fc;
 }
+.container--section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
 
 .btn {
   display: -webkit-inline-box;
@@ -662,6 +666,12 @@ button,
   background-color: #ffffff;
   border: 2px solid #102654;
 }
+.btn--competitions {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: transparent;
+}
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -677,6 +687,12 @@ button,
 
 .title {
   margin: 0;
+}
+.title--jury {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #ffffff;
 }
 
 .description {
@@ -1452,6 +1468,143 @@ button,
 .visits-item__btn {
   display: block;
   width: 100%;
+}
+
+.competitions {
+  position: relative;
+}
+
+.competitions__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 660px;
+  grid-template-columns: auto 660px;
+  margin-bottom: 120px;
+}
+
+.competitions__title {
+  grid-row: 1/-1;
+  font-size: 82px;
+  line-height: 76px;
+  letter-spacing: 2.46px;
+  text-transform: uppercase;
+}
+
+.competitions__info-wrapper {
+  padding: 80px;
+  color: #ffffff;
+  background-color: #ed0233;
+}
+
+.competitions__title-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-min-content auto;
+  -ms-grid-columns: min-content auto;
+  grid-template-columns: -webkit-min-content auto;
+  grid-template-columns: min-content auto;
+  -ms-grid-rows: (auto)[2];
+  grid-template-rows: repeat(2, auto);
+  row-gap: 20px;
+  -webkit-column-gap: 68px;
+     -moz-column-gap: 68px;
+          column-gap: 68px;
+  margin-bottom: 23px;
+}
+
+.competitions__date-title,
+.competitions__time-title {
+  position: relative;
+  margin-bottom: 12px;
+}
+.competitions__date-title::after,
+.competitions__time-title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: -8px;
+  background-color: #ffffff;
+}
+
+.competitions__date-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.competitions__description {
+  margin-bottom: 55px;
+}
+
+.competitions__date,
+.competitions__month,
+.competitions__year,
+.competitions__time {
+  display: block;
+}
+
+.competitions__date,
+.competitions__time {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+}
+
+.competitions__month,
+.competitions__year {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+.competitions__month {
+  margin-bottom: 5px;
+}
+
+.competitions__btn {
+  width: 100%;
+}
+
+.competitions__slider-left-btn,
+.competitions__slider-right-btn {
+  position: absolute;
+  bottom: 131px;
+  left: -40px;
+}
+
+.competitions__slider-right-btn {
+  left: initial;
+  right: -40px;
+}
+
+.jury-item {
+  position: relative;
+  list-style: none;
+}
+
+.jury-item__title {
+  position: absolute;
+  width: calc(100% - 80px);
+  bottom: 26px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  text-align: center;
+}
+
+.jury-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
 }
 
 /* @mixin hover-focus {

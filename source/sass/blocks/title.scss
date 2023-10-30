@@ -1,3 +1,10 @@
 .title {
   margin: 0;
+
+  &--jury {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 22px;
+    color: #ffffff;
+  }
 }

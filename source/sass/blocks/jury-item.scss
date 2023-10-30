@@ -1,0 +1,12 @@
+.jury-item {
+  position: relative;
+  list-style: none;
+}
+.jury-item__title {
+  position: absolute;
+  width: calc(100% - 80px);
+  bottom: 26px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
