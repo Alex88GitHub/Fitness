@@ -13,25 +13,34 @@
   }
 
   &--header {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 30px;
-    padding-bottom: 30px;
     background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   }
 
   &--hero {
-    padding-bottom: 120px;
     background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   }
 
-  &--tickets {
-    position: relative;
+  &--background {
     background-color: #f8f9fc;
   }
+}
 
-  &--section {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
+.container__header {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.container__hero {
+  padding-bottom: 120px;
+}
+
+.container__tickets {
+  position: relative;
+}
+
+.container__section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
