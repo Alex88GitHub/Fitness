@@ -20,8 +20,12 @@
     background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
   }
 
-  &--background {
+  &--background-light {
     background-color: #f8f9fc;
+  }
+
+  &--background-dark {
+    background-color: #102654;
   }
 }
 
@@ -43,4 +47,21 @@
 .container__section {
   padding-top: 120px;
   padding-bottom: 120px;
+}
+
+.container__form {
+  padding-top: 60px;
+  padding-right: 170px;
+  padding-bottom: 60px;
+}
+
+.container__contacts {
+  padding: 60px 60px 60px 100px;
+  border-top: 1px solid #74819c;
+}
+
+.container__half-wrapper {
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }

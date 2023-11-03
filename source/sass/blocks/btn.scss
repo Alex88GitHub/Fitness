@@ -35,6 +35,12 @@
     background-color: transparent;
   }
 
+  &--submit {
+    display: block;
+    width: 100%;
+    background-color: transparent;
+  }
+
   &:disabled {
     opacity: 0.5;
 
