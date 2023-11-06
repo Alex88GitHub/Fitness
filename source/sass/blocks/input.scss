@@ -1,7 +1,8 @@
 .input {
   width: 190px;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -15,7 +16,19 @@
   }
 
   &--phone {
+    // position: relative;
     border: 1px solid #ffffff;
+
+    // &::before {
+    //   position: absolute;
+    //   content: "";
+    //   width: 1px;
+    //   height: calc(100% - 20px);
+    //   top: 50%;
+    //   left: 5px;
+    //   transform: translateY(-50%);
+    //   background-color: #ffffff;
+    // }
   }
 
   &::placeholder {

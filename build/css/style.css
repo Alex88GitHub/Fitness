@@ -396,7 +396,7 @@ body {
 }
 
 a {
-  color: #102654;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -431,13 +431,6 @@ h3 {
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
-}
-
-h4 {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 22px;
 }
 
 textarea {
@@ -631,6 +624,9 @@ button,
 .container--background-dark {
   background-color: #102654;
 }
+.container--footer {
+  background-color: #030a1a;
+}
 
 .container__header {
   display: -webkit-box;
@@ -698,12 +694,6 @@ button,
 }
 .btn--hero-buy {
   background-color: transparent;
-}
-.btn--tickets-buy {
-  padding: 25px 42px;
-  color: #102654;
-  background-color: #ffffff;
-  border: 2px solid #102654;
 }
 .btn--competitions {
   -webkit-box-pack: center;
@@ -1327,22 +1317,23 @@ button,
 }
 
 .training-gym {
+  position: relative;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 355px 660px;
   grid-template-columns: 355px 660px;
-  -ms-grid-rows: (auto)[5];
-  grid-template-rows: repeat(5, auto);
-  -webkit-column-gap: 145px;
-     -moz-column-gap: 145px;
-          column-gap: 145px;
-  padding: 120px 0 120px;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+  -webkit-column-gap: 136px;
+     -moz-column-gap: 136px;
+          column-gap: 136px;
+  padding: 120px 0 240px;
 }
 .training-gym img {
+  display: block;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
-  margin-bottom: 30px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1374,6 +1365,50 @@ button,
 }
 .training-gym__text-content p:last-child {
   margin: 0;
+}
+
+.training-gym__iframe {
+  position: absolute;
+  bottom: 126px;
+  right: 359px;
+  width: 364px;
+  height: 228px;
+}
+
+.training-gym__poster {
+  position: absolute;
+  bottom: 126px;
+  right: 359px;
+  width: 364px;
+  height: 228px;
+}
+
+.training-gym__video-background {
+  position: absolute;
+  bottom: 126px;
+  right: 359px;
+  width: 364px;
+  height: 228px;
+  background-color: rgba(20, 54, 122, 0.5);
+}
+.training-gym__video-background:hover .training-gym__play-btn--stroke {
+  fill: #000000;
+}
+.training-gym__video-background:hover .training-gym__play-btn--circle {
+  fill: #ffffff;
+}
+.training-gym__video-background:hover .training-gym__play-btn--border {
+  stroke: #102654;
+  opacity: initial;
+}
+
+.training-gym__play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .time-list {
@@ -1470,6 +1505,11 @@ button,
   list-style: none;
   background-color: #ffffff;
 }
+.visits-item--current {
+  border: 7px solid;
+  -o-border-image: linear-gradient(142deg, #D10A42, #00359f) 35;
+     border-image: linear-gradient(142deg, #D10A42, #00359f) 35;
+}
 
 .visits-item__title {
   margin-bottom: 11px;
@@ -1525,6 +1565,17 @@ button,
 .visits-item__btn {
   display: block;
   width: 100%;
+}
+.visits-item__btn--buy {
+  padding: 25px 41px;
+  color: #102654;
+  background-color: #ffffff;
+  border: 2px solid #102654;
+}
+.visits-item__btn--buy-current {
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: transparent;
+  color: #ffffff;
 }
 
 .competitions {
@@ -1627,6 +1678,10 @@ button,
   width: 100%;
 }
 
+.competitions__jury-title {
+  margin-bottom: 45px;
+}
+
 .competitions__slider-left-btn,
 .competitions__slider-right-btn {
   position: absolute;
@@ -1704,9 +1759,10 @@ button,
   background-color: #d10a42;
   opacity: 0.2;
 }
-.advantages__block-content h3 {
+.advantages__block-content bold {
   margin: 0;
   font-size: 70px;
+  font-weight: 600;
   line-height: 70px;
   background: linear-gradient(142deg, #D10A42 0%, #0041CA 88.2%);
   -webkit-background-clip: text;
@@ -1717,9 +1773,12 @@ button,
   line-height: 22px;
   color: #2e35ac;
 }
-.advantages__block-content h4 {
+.advantages__block-content h3 {
   margin: 0;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
 }
 .advantages__block-content p {
   margin: 0;
@@ -1736,14 +1795,16 @@ button,
   background-color: #1c3374;
   color: #ffffff;
 }
-.advantages__big-block-content h3 {
+.advantages__big-block-content bold {
+  display: block;
   margin: 0;
   margin-bottom: 12px;
   font-size: 70px;
+  font-weight: 700;
   line-height: 70px;
   text-align: center;
 }
-.advantages__big-block-content h4 {
+.advantages__big-block-content h3 {
   margin: 0;
   margin-bottom: 42px;
   font-size: 26px;
@@ -1922,7 +1983,8 @@ button,
 .input {
   width: 190px;
   padding: 0;
-  padding-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 14px;
   line-height: 22px;
@@ -1995,6 +2057,65 @@ button,
 .contacts__item-title,
 .contacts__item-text {
   margin-bottom: 5px;
+}
+
+.footer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-list__link {
+  list-style: none;
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+}
+
+.social-list__item {
+  list-style: none;
+}
+
+.footer__logo {
+  padding: 20px 0;
+}
+
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__navigation-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.footer__social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.footer__link {
+  padding: 20px 0;
 }
 
 /* @mixin hover-focus {

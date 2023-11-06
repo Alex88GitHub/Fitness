@@ -3,6 +3,11 @@
   text-align: center;
   list-style: none;
   background-color: #ffffff;
+
+  &--current {
+    border: 7px solid;
+    border-image:  linear-gradient(142deg, #D10A42, #00359f) 35;
+  }
 }
 
 .visits-item__title {
@@ -56,4 +61,17 @@
 .visits-item__btn {
   display: block;
   width: 100%;
+
+  &--buy {
+    padding: 25px 41px;
+    color: #102654;
+    background-color: #ffffff;
+    border: 2px solid #102654;
+  }
+
+  &--buy-current {
+    background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    border: transparent;
+    color: #ffffff;
+  }
 }

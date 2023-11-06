@@ -1,0 +1,33 @@
+.footer {
+
+}
+
+.footer__logo {
+  padding: 20px 0;
+}
+
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer__navigation-list {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
+
+.footer__social-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+}
+
+.footer__link {
+  padding: 20px 0;
+}
