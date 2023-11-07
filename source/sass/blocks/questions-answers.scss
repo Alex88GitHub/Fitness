@@ -8,4 +8,6 @@
 
 .questions-answers__wrapper {
   display: grid;
+  grid-template-columns: 260px auto;
+  column-gap: 40px;
 }

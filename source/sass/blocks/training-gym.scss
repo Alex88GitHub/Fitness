@@ -6,7 +6,7 @@
   column-gap: 136px;
   padding: 120px 0 240px;
 
-  img {
+  img:first-child {
     display: block;
     grid-column: 2/3;
     object-fit: cover;
