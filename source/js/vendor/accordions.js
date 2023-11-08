@@ -15,7 +15,7 @@ export class Accordions {
 
   _documentClickHandler(evt) {
     const target = evt.target;
-    if (!target.closest('[data-accordion="button"]')) {
+    if (!target.closest('[data-accordion="element"]')) {
       return;
     }
 
@@ -116,7 +116,8 @@ export class Accordions {
     if (parentElement.hasAttribute('data-single')) {
       this.closeAllAccordion(parentElement);
     }
-
+    const buttonElement = element.querySelector('[data-accordion="button"]');
+    buttonElement.classList.add('is-active');
     element.classList.add('is-active');
     if (transition) {
       contentElement.style.maxHeight = `${this._openHeight}px`;
@@ -141,6 +142,8 @@ export class Accordions {
     if (!contentElement) {
       return;
     }
+    const buttonElement = element.querySelector('[data-accordion="button"]');
+    buttonElement.classList.remove('is-active');
     element.classList.remove('is-active');
     if (transition) {
       contentElement.style.maxHeight = '0';

@@ -1,5 +1,5 @@
 .accordion {
-  margin: 0 auto 50px auto;
+  margin: 0 auto;
 }
 .accordion .accordion {
   width: 90%;
@@ -10,7 +10,7 @@
 }
 .accordion__element {
   position: relative;
-  padding: 25px 0;
+  padding: 25px 0 20px;
 }
 .accordion__element::after {
   position: absolute;
@@ -30,32 +30,47 @@
   height: 1px;
   background-color: rgba(28, 51, 116, 0.2);
 }
+.accordion__element:hover {
+  cursor: pointer;
+}
 .accordion__element.is-active > .accordion__button {
   opacity: 0.5;
 }
 .accordion__button {
   width: 100%;
+  margin-left: auto;
   padding: 10px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   text-transform: uppercase;
   cursor: pointer;
+}
+.accordion__button.is-active {
+  background-color: #1c3374;
+}
+.accordion__button.is-active::before {
+  background-color: #ffffff;
+}
+.accordion__button.is-active::after {
+  background-color: transparent;
 }
 .accordion__wrapper {
   padding: 10px;
 }
 .accordion h3 {
   margin: 0;
+  margin-bottom: 4px;
 }
 .accordion p {
   width: 660px;
+  margin: 0;
+  margin-bottom: 5px;
 }
 
 .accordion__title-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -178,7 +193,6 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 100%;
-  margin-bottom: 40px;
 }
 @media screen and (max-width: 767px) {
   .tabs__controls {
@@ -189,12 +203,12 @@
 .tabs__control {
   text-transform: uppercase;
   cursor: pointer;
-  opacity: 0.5;
   min-width: auto;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
+  margin-bottom: 10px;
 }
 @media screen and (max-width: 1023px) {
   .tabs__control {
@@ -210,11 +224,12 @@
   }
 }
 .tabs__control.is-active {
-  opacity: 1;
   pointer-events: none;
+  color: #ffffff;
+  background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+  border: none;
 }
 .tabs__content {
-  margin-bottom: 40px;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
@@ -226,12 +241,6 @@
   .tabs__element {
     padding: 15px;
   }
-}
-.tabs__element p {
-  margin: 0;
-}
-.tabs__element p:not(:last-child) {
-  margin: 0 0 20px 0;
 }
 .tabs--unset .tabs__content {
   height: 100px;
@@ -983,14 +992,13 @@ button,
           transform: translate(-50%, -50%);
   background-color: #1c3374;
 }
-.btn--accordion-active {
-  background-color: #1c3374;
-}
-.btn--accordion-active::before {
-  background-color: #ffffff;
-}
-.btn--accordion-active::after {
+.btn--tabs {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #102654;
   background-color: transparent;
+  border: 1px solid rgba(16, 38, 84, 0.2);
 }
 .btn:disabled {
   opacity: 0.5;
@@ -2207,6 +2215,8 @@ button,
   display: grid;
   -ms-grid-columns: 260px auto;
   grid-template-columns: 260px auto;
+  -ms-grid-rows: 1fr;
+  grid-template-rows: 1fr;
   -webkit-column-gap: 40px;
      -moz-column-gap: 40px;
           column-gap: 40px;

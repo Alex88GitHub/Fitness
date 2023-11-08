@@ -9,5 +9,6 @@
 .questions-answers__wrapper {
   display: grid;
   grid-template-columns: 260px auto;
+  grid-template-rows: 1fr;
   column-gap: 40px;
 }

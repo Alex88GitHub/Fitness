@@ -29,7 +29,6 @@
   &__controls {
     justify-content: space-between;
     width: 100%;
-    margin-bottom: 40px;
 
     @media screen and (max-width: 767px) {
       flex-wrap: wrap;
@@ -39,10 +38,10 @@
   &__control {
     text-transform: uppercase;
     cursor: pointer;
-    opacity: 0.5;
     min-width: auto;
     justify-content: center;
     width: 100%;
+    margin-bottom: 10px;
 
     @media screen and (max-width: 1023px) {
       margin: 0 10px;
@@ -56,14 +55,14 @@
     }
 
     &.is-active {
-      opacity: 1;
       pointer-events: none;
+      color: #ffffff;
+      background: linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
+      border: none;
     }
   }
 
   &__content {
-    margin-bottom: 40px;
-
     transition: height 0.3s;
   }
 
@@ -73,14 +72,6 @@
 
     @media screen and (max-width: 767px) {
       padding: 15px;
-    }
-
-    p {
-      margin: 0;
-
-      &:not(:last-child) {
-        margin: 0 0 20px 0;
-      }
     }
   }
 
