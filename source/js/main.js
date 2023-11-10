@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initAccordions} from './vendor/init-accordion.js';
 import {initTabs} from './vendor/init-tabs.js';
+import './modules/select-ticket.js';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initAccordions();
   // Modules
   // ---------------------------------
+
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана

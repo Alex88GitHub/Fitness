@@ -1,12 +1,18 @@
 .time-list-item {
-  padding-bottom: 14px;
+  padding: 14px 0 14px;
   font-size: 20px;
   line-height: 20px;
   color: #102654;
   opacity: 0.5;
   list-style: none;
 
-  &--current {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.time-list-item {
+  &.is-active {
     position: relative;
     opacity: initial;
 
