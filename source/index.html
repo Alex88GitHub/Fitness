@@ -105,6 +105,7 @@
               <h3 class="visits-item__title title">С тренером</h3>
               <span class="visits-item__description">12 занятий</span>
               <div class="visits-item__price-wrapper" data-count="5000">
+                <span class="visits-item__background">5000</span>
                 <p class="visits-item__price-title title">5000</p>
                 <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -123,6 +124,7 @@
               <h3 class="visits-item__title title">Дневной</h3>
               <span class="visits-item__description">с 8:00 до 17:00</span>
               <div class="visits-item__price-wrapper" data-count="1700">
+                <span class="visits-item__background">1700</span>
                 <p class="visits-item__price-title title">1700</p>
                 <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -142,6 +144,7 @@
               <h3 class="visits-item__title title">Полный день</h3>
               <span class="visits-item__description">с 8:00 до 22:00</span>
               <div class="visits-item__price-wrapper" data-count="2700">
+                <span class="visits-item__background">2700</span>
                 <p class="visits-item__price-title title">2700</p>
                 <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
@@ -194,24 +197,60 @@
           </svg>
           <ul class="jury-list">
             <li class="jury-list__item jury-item">
+              <h3 class="jury-item__title title title--jury">Анна Павлова</h3>
               <img class="jury-item__image" src="img/photo-anna-pavlova.png" srcset="img/photo-anna-pavlova@2x.png 2x"
                 width="260" height="294" alt="Фотография.">
-              <h3 class="jury-item__title title title--jury">Анна Павлова</h3>
+              <div class="jury-item__info-wrapper">
+                <h3 class="jury-item__info-trainer-title">Анна Павлова</h3>
+                <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                <ul class="jury-item__info-trainer-list">
+                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
             <li class="jury-list__item jury-item">
               <img class="jury-item__image" src="img/photo-alexey-lavrov.png" srcset="img/photo-alexey-lavrov@2x.png 2x"
                 width="260" height="294" alt="Фотография.">
               <h3 class="jury-item__title title title--jury">Алексей Лавров</h3>
+              <div class="jury-item__info-wrapper">
+                <h3 class="jury-item__info-trainer-title">Алексей Лавров</h3>
+                <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                <ul class="jury-item__info-trainer-list">
+                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
             <li class="jury-list__item jury-item">
               <img class="jury-item__image" src="img/photo-alexander-pashkov.png"
                 srcset="img/photo-alexander-pashkov@2x.png 2x" width="260" height="294" alt="Фотография.">
               <h3 class="jury-item__title title title--jury">Александр Пашков</h3>
+              <div class="jury-item__info-wrapper">
+                <h3 class="jury-item__info-trainer-title">Александр Пашков</h3>
+                <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                <ul class="jury-item__info-trainer-list">
+                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
             <li class="jury-list__item jury-item">
               <img class="jury-item__image" src="img/photo-mariya-ketova.png" srcset="img/photo-mariya-ketova@2x.png 2x"
                 width="260" height="294" alt="Фотография.">
               <h3 class="jury-item__title title title--jury">Мария Кетова</h3>
+              <div class="jury-item__info-wrapper">
+                <h3 class="jury-item__info-trainer-title">Мария Кетова</h3>
+                <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                <ul class="jury-item__info-trainer-list">
+                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                </ul>
+              </div>
             </li>
           </ul>
           <svg class="competitions__slider-right-btn" width="18" height="34" viewBox="0 0 18 34" fill="none"
@@ -327,7 +366,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Где можно посмотреть расписание?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -340,7 +380,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -353,7 +394,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -383,7 +425,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Можно ли заморозить абонемент?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -396,7 +439,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -409,7 +453,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Что такое семейный доступ и доступ для друзей?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -437,7 +482,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -450,7 +496,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Можно ли приобрести в центре спортивное питание?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -463,7 +510,8 @@
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
                       <h3>Есть ли в центре детская комната?</h3>
-                      <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -479,8 +527,9 @@
                 <div class="accordion" data-accordion="parent">
                   <div class="accordion__element is-active" data-accordion="element">
                     <div class="accordion__title-wrapper">
-                    <h3>Есть в фитнес-центре дресс-код?</h3>
-                    <button class="accordion__button btn btn--accordion is-active" type="button" data-accordion="button"></button>
+                      <h3>Есть в фитнес-центре дресс-код?</h3>
+                      <button class="accordion__button btn btn--accordion is-active" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду.
@@ -492,8 +541,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
-                    <h3>Можно ли приводить с собой детей на тренировки?</h3>
-                    <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -505,8 +555,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
-                    <h3>Какие дополнительные правила посещения центра?</h3>
-                    <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <h3>Какие дополнительные правила посещения центра?</h3>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur
@@ -518,8 +569,9 @@
                   </div>
                   <div class="accordion__element" data-accordion="element">
                     <div class="accordion__title-wrapper">
-                    <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
-                    <button class="accordion__button btn btn--accordion" type="button" data-accordion="button"></button>
+                      <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                      <button class="accordion__button btn btn--accordion" type="button"
+                        data-accordion="button"></button>
                     </div>
                     <div data-accordion="content">
                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, eaque consequatur

@@ -1,7 +1,16 @@
 .jury-item {
   position: relative;
   list-style: none;
+
+  &:hover > .jury-item__title {
+    display: none;
+  }
+
+  &:hover > .jury-item__info-wrapper{
+    display: block;
+  }
 }
+
 .jury-item__title {
   position: absolute;
   width: calc(100% - 80px);
@@ -9,4 +18,59 @@
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
+}
+
+.jury-item__info-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 45px 41px;
+  color: #ffffff;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.jury-item__info-trainer-title {
+  margin: 0 auto 8px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.jury-item__info-trainer-specialization {
+  margin: 0 auto 33px;
+  text-align: center;
+  color: #b6bdcc;
+  font-weight: 300;
+}
+
+.jury-item__info-trainer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.jury-item__info-trainer-item {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  list-style: none;
+
+ &:not(:last-child) {
+  margin-bottom: 12px;
+ }
+
+ &::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
+ }
 }

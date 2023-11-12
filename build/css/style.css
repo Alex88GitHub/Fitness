@@ -1827,8 +1827,8 @@ button,
   margin-bottom: 29px;
   padding: 54px 18px 6px;
 }
-.visits-item__price-wrapper::before {
-  content: attr(data-count);
+
+.visits-item__background {
   position: absolute;
   z-index: 1;
   top: 0;
@@ -1992,6 +1992,12 @@ button,
   position: relative;
   list-style: none;
 }
+.jury-item:hover > .jury-item__title {
+  display: none;
+}
+.jury-item:hover > .jury-item__info-wrapper {
+  display: block;
+}
 
 .jury-item__title {
   position: absolute;
@@ -2002,6 +2008,59 @@ button,
       -ms-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
+}
+
+.jury-item__info-wrapper {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 45px 41px;
+  color: #ffffff;
+  background-color: rgba(16, 38, 84, 0.89);
+}
+
+.jury-item__info-trainer-title {
+  margin: 0 auto 8px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: center;
+}
+
+.jury-item__info-trainer-specialization {
+  margin: 0 auto 33px;
+  text-align: center;
+  color: #b6bdcc;
+  font-weight: 300;
+}
+
+.jury-item__info-trainer-list {
+  margin: 0;
+  padding: 0;
+}
+
+.jury-item__info-trainer-item {
+  position: relative;
+  padding-left: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  list-style: none;
+}
+.jury-item__info-trainer-item:not(:last-child) {
+  margin-bottom: 12px;
+}
+.jury-item__info-trainer-item::before {
+  position: absolute;
+  content: "";
+  top: 8px;
+  left: 0;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #ffffff;
 }
 
 .jury-list {
@@ -2025,6 +2084,7 @@ button,
   grid-template-columns: 340px 240px 340px;
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
+  grid-auto-flow: row dense;
   -webkit-column-gap: 60px;
      -moz-column-gap: 60px;
           column-gap: 60px;
@@ -2081,6 +2141,7 @@ button,
 }
 
 .advantages__big-block-content {
+  position: relative;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -2088,6 +2149,16 @@ button,
   padding: 70px 34px;
   background-color: #1c3374;
   color: #ffffff;
+}
+.advantages__big-block-content::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  left: 0;
+  bottom: -58px;
+  background-color: #d10a42;
+  opacity: 0.2;
 }
 .advantages__big-block-content bold {
   display: block;
