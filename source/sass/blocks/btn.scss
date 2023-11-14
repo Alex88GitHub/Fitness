@@ -7,9 +7,9 @@
   line-height: 12px;
   letter-spacing: 0.6px;
   text-transform: uppercase;
-  color: $color-default-white;
+  color: #102654;
 
-  background-color: $color-neon-blue;
+  background-color: transparent;
   border: 2px solid #ffffff;
   cursor: pointer;
 
@@ -73,6 +73,26 @@
     color: #102654;
     background-color: transparent;
     border: 1px solid rgba(16, 38, 84, 0.2);
+  }
+
+  &--swiper {
+    display: block;
+    padding: 0;
+    border: none;
+
+    &:hover,
+    &:focus-visible {
+      border: 2px solid;
+      border-radius: 50%;
+    }
+
+    &:active {
+      background-color: #102654;
+    }
+
+    &:active svg path{
+      stroke: #ffffff;
+    }
   }
 
   &:disabled {

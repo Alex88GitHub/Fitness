@@ -1,0 +1,21 @@
+.jury-swiper {
+  position: relative;
+}
+
+.jury-swiper__prev-btn,
+.jury-swiper__next-btn {
+  position: absolute;
+  top: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.jury-swiper__prev-btn {
+  left: -40px;
+  transform: translate(-100%, -50%);
+}
+
+.jury-swiper__next-btn {
+  right: -40px;
+  transform: translate(100%, -50%);
+}

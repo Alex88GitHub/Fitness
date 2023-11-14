@@ -4,7 +4,7 @@
 @import "vendor/data-accordion.scss";
 @import "vendor/data-tabs.scss";
 @import "vendor/tabs.scss";
-@import "vendor/normalize";
+// @import "vendor/normalize";
 // Swiper 8.4.7
 // @import "vendor/swiper";
 
@@ -37,6 +37,7 @@
 @import "blocks/visits-list.scss";
 @import "blocks/visits-item.scss";
 @import "blocks/competitions.scss";
+@import "blocks/jury-swiper.scss";
 @import "blocks/jury-item.scss";
 @import "blocks/jury-list.scss";
 @import "blocks/advantages.scss";

@@ -191,72 +191,77 @@
               width="660" height="500" alt="Постер.">
           </div>
           <h2 class="competitions__jury-title title">Жюри</h2>
-          <svg class="competitions__slider-left-btn" width="18" height="34" viewBox="0 0 18 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M17 1L0.999999 17L17 33" stroke="#102654" />
-          </svg>
-          <ul class="jury-list">
-            <li class="jury-list__item jury-item">
-              <h3 class="jury-item__title title title--jury">Анна Павлова</h3>
-              <img class="jury-item__image" src="img/photo-anna-pavlova.png" srcset="img/photo-anna-pavlova@2x.png 2x"
-                width="260" height="294" alt="Фотография.">
-              <div class="jury-item__info-wrapper">
-                <h3 class="jury-item__info-trainer-title">Анна Павлова</h3>
-                <p class="jury-item__info-trainer-specialization">CrossFit</p>
-                <ul class="jury-item__info-trainer-list">
-                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
-                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-            <li class="jury-list__item jury-item">
-              <img class="jury-item__image" src="img/photo-alexey-lavrov.png" srcset="img/photo-alexey-lavrov@2x.png 2x"
-                width="260" height="294" alt="Фотография.">
-              <h3 class="jury-item__title title title--jury">Алексей Лавров</h3>
-              <div class="jury-item__info-wrapper">
-                <h3 class="jury-item__info-trainer-title">Алексей Лавров</h3>
-                <p class="jury-item__info-trainer-specialization">CrossFit</p>
-                <ul class="jury-item__info-trainer-list">
-                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
-                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-            <li class="jury-list__item jury-item">
-              <img class="jury-item__image" src="img/photo-alexander-pashkov.png"
-                srcset="img/photo-alexander-pashkov@2x.png 2x" width="260" height="294" alt="Фотография.">
-              <h3 class="jury-item__title title title--jury">Александр Пашков</h3>
-              <div class="jury-item__info-wrapper">
-                <h3 class="jury-item__info-trainer-title">Александр Пашков</h3>
-                <p class="jury-item__info-trainer-specialization">CrossFit</p>
-                <ul class="jury-item__info-trainer-list">
-                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
-                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-            <li class="jury-list__item jury-item">
-              <img class="jury-item__image" src="img/photo-mariya-ketova.png" srcset="img/photo-mariya-ketova@2x.png 2x"
-                width="260" height="294" alt="Фотография.">
-              <h3 class="jury-item__title title title--jury">Мария Кетова</h3>
-              <div class="jury-item__info-wrapper">
-                <h3 class="jury-item__info-trainer-title">Мария Кетова</h3>
-                <p class="jury-item__info-trainer-specialization">CrossFit</p>
-                <ul class="jury-item__info-trainer-list">
-                  <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
-                  <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
-                  <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-          <svg class="competitions__slider-right-btn" width="18" height="34" viewBox="0 0 18 34" fill="none"
-            xmlns="http://www.w3.org/2000/svg">
-            <path d="M1 1L17 17L1 33" stroke="#102654" />
-          </svg>
+          <div class="competitions__jury-swiper jury-swiper">
+            <button class="jury-swiper__prev-btn btn btn--swiper" data-button="prev-button">
+              <svg width="18" height="34" viewBox="0 0 18 34" fill="none" xmlns="http://www.w3.org/2000/svg" overflow-auto>
+                <path d="M17 1L0.999999 17L17 33" stroke="#102654" />
+              </svg>
+            </button>
+            <ul class="jury-list">
+              <li class="jury-list__item jury-item">
+                <h3 class="jury-item__title title title--jury">Анна Павлова</h3>
+                <img class="jury-item__image" src="img/photo-anna-pavlova.png" srcset="img/photo-anna-pavlova@2x.png 2x"
+                  width="260" height="294" alt="Фотография.">
+                <div class="jury-item__info-wrapper">
+                  <h3 class="jury-item__info-trainer-title">Анна Павлова</h3>
+                  <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                  <ul class="jury-item__info-trainer-list">
+                    <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                    <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury-list__item jury-item">
+                <img class="jury-item__image" src="img/photo-alexey-lavrov.png"
+                  srcset="img/photo-alexey-lavrov@2x.png 2x" width="260" height="294" alt="Фотография.">
+                <h3 class="jury-item__title title title--jury">Алексей Лавров</h3>
+                <div class="jury-item__info-wrapper">
+                  <h3 class="jury-item__info-trainer-title">Алексей Лавров</h3>
+                  <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                  <ul class="jury-item__info-trainer-list">
+                    <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                    <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury-list__item jury-item">
+                <img class="jury-item__image" src="img/photo-alexander-pashkov.png"
+                  srcset="img/photo-alexander-pashkov@2x.png 2x" width="260" height="294" alt="Фотография.">
+                <h3 class="jury-item__title title title--jury">Александр Пашков</h3>
+                <div class="jury-item__info-wrapper">
+                  <h3 class="jury-item__info-trainer-title">Александр Пашков</h3>
+                  <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                  <ul class="jury-item__info-trainer-list">
+                    <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                    <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+              <li class="jury-list__item jury-item">
+                <img class="jury-item__image" src="img/photo-mariya-ketova.png"
+                  srcset="img/photo-mariya-ketova@2x.png 2x" width="260" height="294" alt="Фотография.">
+                <h3 class="jury-item__title title title--jury">Мария Кетова</h3>
+                <div class="jury-item__info-wrapper">
+                  <h3 class="jury-item__info-trainer-title">Мария Кетова</h3>
+                  <p class="jury-item__info-trainer-specialization">CrossFit</p>
+                  <ul class="jury-item__info-trainer-list">
+                    <li class="jury-item__info-trainer-item">Certified Level 3 Trainer</li>
+                    <li class="jury-item__info-trainer-item">Победитель чемпионата России по CrossFit</li>
+                    <li class="jury-item__info-trainer-item">Опыт — 6 лет</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <button class="jury-swiper__next-btn btn btn--swiper" data-button="next-button">
+              <svg width="18" height="34" viewBox="0 0 18 34" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1L17 17L1 33" stroke="currentColor"/>
+              </svg>
+            </button>
+          </div>
         </section>
       </div>
       <div class="container container__section container--background-light">
