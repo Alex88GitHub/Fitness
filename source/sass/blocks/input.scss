@@ -4,34 +4,15 @@
   padding-top: 7px;
   padding-bottom: 5px;
   font-family: "Roboto", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: $fz-small;
   line-height: 22px;
   font-weight: 400;
-  color: #ffffff;
-  background-color: #102654;
+  color: $color-light-main;
+  background-color: $color-dark-main;
   border: none;
-
-  &--name {
-    border-bottom: 1px solid #74819c;
-  }
-
-  &--phone {
-    // position: relative;
-    border: 1px solid #ffffff;
-
-    // &::before {
-    //   position: absolute;
-    //   content: "";
-    //   width: 1px;
-    //   height: calc(100% - 20px);
-    //   top: 50%;
-    //   left: 5px;
-    //   transform: translateY(-50%);
-    //   background-color: #ffffff;
-    // }
-  }
+  border-bottom: 1px solid $color-light-slate-grey;
 
   &::placeholder {
-    color: #ffffff;
+    color: $color-light-main;
   }
 }

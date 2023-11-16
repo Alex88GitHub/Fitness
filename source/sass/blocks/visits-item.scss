@@ -2,11 +2,11 @@
   padding: 65px 77px;
   text-align: center;
   list-style: none;
-  background-color: #ffffff;
+  background-color: $color-light-main;
 
   &--current {
     border: 7px solid;
-    border-image:  linear-gradient(142deg, #D10A42, #00359f) 35;
+    border-image:  $border-gradient;
   }
 }
 
@@ -36,20 +36,21 @@
   left: 0;
   width: 100%;
   height: 100%;
-  font-size: 100px;
+  font-size: $fz-number-xlarge;
   font-weight: 700;
   line-height: 150px;
-  color: #e8e8e8;
+  color: $color-whisper;
   opacity: 0.48;
+  user-select: none;
 }
 
 .visits-item__price-title {
   position: relative;
   z-index: 2;
-  font-size: 60px;
+  font-size: $fz-number-medium;
   font-weight: 700;
   line-height: 90px;
-  color: #103aae;
+  color: $color-egyptian-blue;
 }
 
 .visits-item__price-unit {
@@ -60,17 +61,18 @@
 .visits-item__btn {
   display: block;
   width: 100%;
+  user-select: none;
 
   &--buy {
     padding: 25px 41px;
-    color: #102654;
-    background-color: #ffffff;
-    border: 2px solid #102654;
+    color: $color-dark-main;
+    background-color: $color-light-main;
+    border: 2px solid $color-dark-main;
   }
 
   &--buy-current {
-    background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+    background: $button-gradient;
     border: transparent;
-    color: #ffffff;
+    color: $color-light-main;
   }
 }

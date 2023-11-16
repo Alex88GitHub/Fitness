@@ -13,23 +13,23 @@
   }
 
   &--header {
-    background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+    background: $background-gradient
   }
 
   &--hero {
-    background: linear-gradient(90deg, #1c3477 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+    background: $background-gradient;
   }
 
   &--background-light {
-    background-color: #f8f9fc;
+    background-color: $color-ghost-white;
   }
 
   &--background-dark {
-    background-color: #102654;
+    background-color: $color-dark-main;
   }
 
   &--footer {
-    background-color: #030a1a;
+    background-color: $color-black-russian;
   }
 }
 
@@ -61,10 +61,10 @@
 
 .container__contacts {
   padding: 60px 60px 60px 100px;
-  border-top: 1px solid #74819c;
+  border-top: 1px solid $color-light-slate-grey;
 }
 
-.container__half-wrapper {
+.container__half-width-wrapper {
   padding: 0;
   display: grid;
   grid-template-columns: 1fr 1fr;

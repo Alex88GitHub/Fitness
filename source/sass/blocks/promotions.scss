@@ -19,8 +19,8 @@
 .promotions__image-block-content {
   position: relative;
   padding: 40px 45px 45px;
-  background-color: #ed0233;
-  color: #ffffff;
+  background-color: $color-torch-red;
+  color: $color-light-main;
 
   h3 {
     margin: 0;
@@ -30,13 +30,13 @@
   strong {
     display: block;
     margin-bottom: 25px;
-    font-size: 70px;
+    font-size: $fz-number-large;
     line-height: 70px;
   }
 
   p {
     margin: 0;
-    font-size: 18px;
+    font-size: $fz-large;
     font-weight: 300;
   }
 
@@ -44,7 +44,7 @@
     position: absolute;
     left: 45px;
     bottom: 50px;
-    color: #ffffff;
+    color: $color-light-main;
 
     &::after {
       position: absolute;
@@ -53,7 +53,7 @@
       bottom: -5px;
       width: 100%;
       height: 1px;
-      background-color: #ffffff;
+      background-color: $color-light-main;
     }
   }
 }
@@ -62,25 +62,25 @@
   position: relative;
   padding: 30px 35px 35px;
   border: 7px solid;
-  border-image:  linear-gradient(163deg, #D10A42, #00359f) 35;
+  border-image:  linear-gradient(163deg, $color-crimson, $color-smalt) 35;
 
   h3 {
     margin: 0;
     margin-bottom: 10px;
-    color: #1c3374;
+    color: $color-resolution-blue;
   }
 
   p {
     margin: 0;
     font-weight: 300;
-    color: #1c3374;
+    color: $color-resolution-blue;
   }
 
   a {
     position: absolute;
     left: 35px;
     bottom: 40px;
-    color: #1c3374;
+    color: $color-resolution-blue;
 
     &::after {
       position: absolute;
@@ -89,7 +89,7 @@
       bottom: -5px;
       width: 100%;
       height: 1px;
-      background-color: #1c3374;
+      background-color: $color-resolution-blue;
     }
   }
 }

@@ -5932,7 +5932,7 @@ const swiper = () => {
           nextEl: null,
           prevEl: null,
           hideOnClick: false,
-          disabledClass: 'swiper-button-disabled',
+          disabledClass: 'swiper-button-disabled btn--slider-disabled',
           hiddenClass: 'swiper-button-hidden',
           lockClass: 'swiper-button-lock',
           navigationDisabledClass: 'swiper-navigation-disabled'

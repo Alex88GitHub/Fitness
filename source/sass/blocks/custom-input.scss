@@ -61,7 +61,7 @@
     right: 0;
     bottom: 35px;
 
-    color: #ff1553;
+    color: $color-error;
 
     opacity: 0;
 
@@ -101,7 +101,7 @@
     bottom: -5px;
 
     &.is-invalid {
-      color: #ff0000;
+      color: $color-error;
     }
 
     &.is-valid {

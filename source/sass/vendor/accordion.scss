@@ -60,7 +60,7 @@
       background-color: #1c3374;
 
       &::before {
-        background-color: #ffffff;
+        background-color: $color-light-main;
       }
       &::after {
         background-color: transparent;

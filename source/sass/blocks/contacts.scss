@@ -21,7 +21,7 @@
     height: 100%;
     left: 50%;
     bottom: 0;
-    background-color: #74819c;
+    background-color: $color-light-slate-grey;
   }
 }
 
@@ -31,6 +31,16 @@
 
 .contacts__item-title,
 .contacts__item-text {
+  margin: 0;
   margin-bottom: 5px;
+}
+
+.contacts__item-text {
+  font-size: $fz-small;
+  line-height: 22px;
+}
+
+.contacts__item-link {
+  color: $color-dark-main;
 }
 

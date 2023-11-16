@@ -1,13 +1,3 @@
-// Vendor
-// ---------------------------------
-@import "vendor/accordion.scss";
-@import "vendor/data-accordion.scss";
-@import "vendor/data-tabs.scss";
-@import "vendor/tabs.scss";
-// @import "vendor/normalize";
-// Swiper 8.4.7
-// @import "vendor/swiper";
-
 // Global
 // ---------------------------------
 
@@ -18,12 +8,21 @@
 @import "global/utils";
 @import "global/container";
 
+// Vendor
+// ---------------------------------
+@import "vendor/accordion.scss";
+@import "vendor/data-accordion.scss";
+@import "vendor/data-tabs.scss";
+@import "vendor/tabs.scss";
+@import "vendor/swiper.scss";
+// @import "vendor/normalize";
+// Swiper 8.4.7
+
 // Blocks
 // ---------------------------------
 
 @import "blocks/btn";
 @import "blocks/title.scss";
-@import "blocks/text.scss";
 @import "blocks/description.scss";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";

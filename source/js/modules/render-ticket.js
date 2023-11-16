@@ -24,13 +24,6 @@ const pricePeriod = {
   },
 };
 
-
-// priceWrapperElement.forEach((element) => {
-//   let style = getComputedStyle(element, ':before').content;
-//   console.log(style);
-// });
-
-
 export const getPrice = (element) => {
   if (element === '1 месяц') {
     typeTicketElement.forEach((typeElement, index) => {

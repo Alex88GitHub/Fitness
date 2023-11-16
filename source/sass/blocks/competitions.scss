@@ -8,6 +8,10 @@
   margin-bottom: 120px;
 }
 
+.competitions__slider-wrapper {
+  position: relative;
+}
+
 .competitions__title {
   grid-row: 1/-1;
   font-size: 82px;
@@ -18,8 +22,8 @@
 
 .competitions__info-wrapper {
   padding: 80px;
-  color: #ffffff;
-  background-color: #ed0233;;
+  color: $color-light-main;
+  background-color: $color-torch-red;
 }
 
 .competitions__title-wrapper {
@@ -43,7 +47,7 @@
     height: 1px;
     left: 0;
     bottom: -8px;
-    background-color: #ffffff;
+    background-color: $color-light-main;
 
   }
 }
@@ -67,14 +71,14 @@
 
 .competitions__date,
 .competitions__time {
-  font-size: 40px;
+  font-size: $fz-number-small;
   font-weight: 700;
   line-height: 40px;
 }
 
 .competitions__month,
 .competitions__year {
-  font-size: 14px;
+  font-size: $fz-small;
   line-height: 14px;
 }
 

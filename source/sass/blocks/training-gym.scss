@@ -73,15 +73,15 @@
 
   &:hover {
     .training-gym__play-btn--stroke {
-      fill: #000000;
+      fill: $color-dark-main;
     }
 
     .training-gym__play-btn--circle {
-      fill: #ffffff;
+      fill: $color-light-main;
     }
 
     .training-gym__play-btn--border {
-      stroke: #102654;
+      stroke: $color-dark-main;
       opacity: initial;
     }
   }

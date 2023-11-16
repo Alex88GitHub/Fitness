@@ -57,6 +57,10 @@
   height: 100%;
   position: relative;
   transition-property: transform;
+
+  &:hover .jury-item__info-wrapper {
+    display: block;
+  }
 }
 .swiper-slide-invisible-blank {
   visibility: hidden;
@@ -204,7 +208,7 @@
 }
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
-  opacity: 0.35;
+  opacity: 0.3;
   cursor: auto;
   pointer-events: none;
 }
