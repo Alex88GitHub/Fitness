@@ -5,6 +5,7 @@ import {initAccordions} from './vendor/init-accordion';
 import {initTabs} from './vendor/init-tabs';
 import './modules/render-ticket';
 import {initSliders} from './modules/init-sliders';
+import {setupVideo} from './modules/video';
 
 // ---------------------------------
 
@@ -16,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   // Modules
   // ---------------------------------
+  setupVideo();
   initTabs();
   initAccordions();
   initSliders();

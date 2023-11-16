@@ -55,15 +55,15 @@
   height: 228px;
 }
 
-.training-gym__poster {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+// .training-gym__poster {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   width: 100%;
+//   height: 100%;
+//   border: none;
 
-}
+// }
 
 // .training-gym__video-background {
 //   position: absolute;
@@ -96,23 +96,31 @@
 //   transform: translate(-50%, -50%);
 // }
 
-.training-gym__video-wrapper {
+.training-gym__video {
   position: absolute;
   width: 364px;
   height: 228px;
   bottom: 120px;
   left: 437px;
 
-  &::after {
-    position: absolute;
-    z-index: 1;
-    content: "";
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: $color-dark-cerulean;
-    opacity: 0.5;
+  &--enabled {
+    cursor: pointer;
+
+    &::after {
+      position: absolute;
+      z-index: 1;
+      content: "";
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: $color-dark-cerulean;
+      opacity: 0.5;
+    }
+  }
+
+  &--enabled .training-gym__button {
+    display: block;
   }
 
   &:hover {

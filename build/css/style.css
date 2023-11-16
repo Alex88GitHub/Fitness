@@ -1607,9 +1607,11 @@ button.swiper-pagination-bullet {
   pointer-events: none;
 }
 .btn--play-video {
+  display: none;
   padding: 0;
   border: none;
   border-radius: 50%;
+  outline: none;
 }
 .btn:disabled {
   opacity: 0.3;
@@ -2264,23 +2266,17 @@ button.swiper-pagination-bullet {
   height: 228px;
 }
 
-.training-gym__poster {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
-}
-
-.training-gym__video-wrapper {
+.training-gym__video {
   position: absolute;
   width: 364px;
   height: 228px;
   bottom: 120px;
   left: 437px;
 }
-.training-gym__video-wrapper::after {
+.training-gym__video--enabled {
+  cursor: pointer;
+}
+.training-gym__video--enabled::after {
   position: absolute;
   z-index: 1;
   content: "";
@@ -2291,17 +2287,20 @@ button.swiper-pagination-bullet {
   background-color: #14367a;
   opacity: 0.5;
 }
-.training-gym__video-wrapper:hover {
+.training-gym__video--enabled .training-gym__button {
+  display: block;
+}
+.training-gym__video:hover {
   cursor: pointer;
 }
-.training-gym__video-wrapper:hover .training-gym__button-border, .training-gym__video-wrapper:focus-visible .training-gym__button-border {
+.training-gym__video:hover .training-gym__button-border, .training-gym__video:focus-visible .training-gym__button-border {
   stroke: #102654;
   opacity: 1;
 }
-.training-gym__video-wrapper:hover .training-gym__button-circle, .training-gym__video-wrapper:focus-visible .training-gym__button-circle {
+.training-gym__video:hover .training-gym__button-circle, .training-gym__video:focus-visible .training-gym__button-circle {
   fill: #ffffff;
 }
-.training-gym__video-wrapper:hover .training-gym__button-triangle, .training-gym__video-wrapper:focus-visible .training-gym__button-triangle {
+.training-gym__video:hover .training-gym__button-triangle, .training-gym__video:focus-visible .training-gym__button-triangle {
   fill: #102654;
 }
 

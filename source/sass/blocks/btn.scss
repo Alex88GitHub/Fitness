@@ -108,9 +108,11 @@
   }
 
   &--play-video {
+    display: none;
     padding: 0;
     border: none;
     border-radius: 50%;
+    outline: none;
   }
 
   &:disabled {
