@@ -4,7 +4,7 @@
   grid-template-columns: 355px 660px;
   grid-template-rows: auto;
   column-gap: 136px;
-  padding: 120px 0 240px;
+  padding: 120px 0 235px;
 
   img:first-child {
     display: block;
@@ -57,39 +57,91 @@
 
 .training-gym__poster {
   position: absolute;
-  bottom: 126px;
-  right: 359px;
-  width: 364px;
-  height: 228px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+
 }
 
-.training-gym__video-background {
+// .training-gym__video-background {
+//   position: absolute;
+//   bottom: 126px;
+//   right: 359px;
+//   width: 364px;
+//   height: 228px;
+//   background-color: rgba(20, 54, 122, 0.5);
+
+//   &:hover {
+//     .training-gym__play-btn--stroke {
+//       fill: $color-dark-main;
+//     }
+
+//     .training-gym__play-btn--circle {
+//       fill: $color-light-main;
+//     }
+
+//     .training-gym__play-btn--border {
+//       stroke: $color-dark-main;
+//       opacity: initial;
+//     }
+//   }
+// }
+
+// .training-gym__play-btn {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+.training-gym__video-wrapper {
   position: absolute;
-  bottom: 126px;
-  right: 359px;
   width: 364px;
   height: 228px;
-  background-color: rgba(20, 54, 122, 0.5);
+  bottom: 120px;
+  left: 437px;
+
+  &::after {
+    position: absolute;
+    z-index: 1;
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: $color-dark-cerulean;
+    opacity: 0.5;
+  }
 
   &:hover {
-    .training-gym__play-btn--stroke {
-      fill: $color-dark-main;
-    }
+    cursor: pointer;
+  }
 
-    .training-gym__play-btn--circle {
-      fill: $color-light-main;
-    }
+  &:hover .training-gym__button-border,
+  &:focus-visible .training-gym__button-border {
+    stroke: $color-dark-main;
+    opacity: 1;
+  }
 
-    .training-gym__play-btn--border {
-      stroke: $color-dark-main;
-      opacity: initial;
-    }
+  &:hover .training-gym__button-circle,
+  &:focus-visible .training-gym__button-circle {
+    fill: $color-light-main;
+  }
+
+  &:hover .training-gym__button-triangle,
+  &:focus-visible .training-gym__button-triangle {
+    fill: $color-dark-main;
   }
 }
 
-.training-gym__play-btn {
+.training-gym__button {
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
+  width: 100px;
+  height: 100px;
   transform: translate(-50%, -50%);
 }

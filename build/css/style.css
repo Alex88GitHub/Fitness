@@ -1606,17 +1606,14 @@ button.swiper-pagination-bullet {
   opacity: 0.3;
   pointer-events: none;
 }
+.btn--play-video {
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+}
 .btn:disabled {
   opacity: 0.3;
   pointer-events: none;
-}
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    opacity: 0.8;
-  }
-}
-.btn.focus-visible:focus {
-  opacity: 0.8;
 }
 
 .title {
@@ -2219,7 +2216,7 @@ button.swiper-pagination-bullet {
   -webkit-column-gap: 136px;
      -moz-column-gap: 136px;
           column-gap: 136px;
-  padding: 120px 0 240px;
+  padding: 120px 0 235px;
 }
 .training-gym img:first-child {
   display: block;
@@ -2269,35 +2266,52 @@ button.swiper-pagination-bullet {
 
 .training-gym__poster {
   position: absolute;
-  bottom: 126px;
-  right: 359px;
-  width: 364px;
-  height: 228px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 
-.training-gym__video-background {
+.training-gym__video-wrapper {
   position: absolute;
-  bottom: 126px;
-  right: 359px;
   width: 364px;
   height: 228px;
-  background-color: rgba(20, 54, 122, 0.5);
+  bottom: 120px;
+  left: 437px;
 }
-.training-gym__video-background:hover .training-gym__play-btn--stroke {
-  fill: #102654;
+.training-gym__video-wrapper::after {
+  position: absolute;
+  z-index: 1;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #14367a;
+  opacity: 0.5;
 }
-.training-gym__video-background:hover .training-gym__play-btn--circle {
+.training-gym__video-wrapper:hover {
+  cursor: pointer;
+}
+.training-gym__video-wrapper:hover .training-gym__button-border, .training-gym__video-wrapper:focus-visible .training-gym__button-border {
+  stroke: #102654;
+  opacity: 1;
+}
+.training-gym__video-wrapper:hover .training-gym__button-circle, .training-gym__video-wrapper:focus-visible .training-gym__button-circle {
   fill: #ffffff;
 }
-.training-gym__video-background:hover .training-gym__play-btn--border {
-  stroke: #102654;
-  opacity: initial;
+.training-gym__video-wrapper:hover .training-gym__button-triangle, .training-gym__video-wrapper:focus-visible .training-gym__button-triangle {
+  fill: #102654;
 }
 
-.training-gym__play-btn {
+.training-gym__button {
   position: absolute;
+  z-index: 2;
   top: 50%;
   left: 50%;
+  width: 100px;
+  height: 100px;
   -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
