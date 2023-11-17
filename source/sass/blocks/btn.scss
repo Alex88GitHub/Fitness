@@ -81,6 +81,15 @@
     color: $color-dark-main;
     border: 1px solid rgba(16, 38, 84, 0.2);
 
+    &:hover,
+    &:focus-visible {
+      border-color: $color-dark-main;
+    }
+
+    &:disabled {
+      color: $color-link-water;
+      border-color: rgba(16, 38, 84, 0.2);
+    }
   }
 
   &--slider {

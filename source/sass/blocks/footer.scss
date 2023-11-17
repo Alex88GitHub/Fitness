@@ -25,6 +25,36 @@
 }
 
 .footer__link {
-  padding: 20px 0;
+  position: relative;
+  padding: 5px 10px;
   color: $color-light-main;
+
+  &:hover {
+    &::after {
+      position: absolute;
+      content: "";
+      left: 10px;
+      bottom: -5px;
+      width: calc(100% - 20px);
+      height: 1px;
+      background-color: $color-light-main;
+    }
+  }
+
+  &:focus {
+    padding: 5px 10px;
+    border: 1px solid $color-light-main;
+    outline: none;
+  }
+
+  &:active {
+    &::after {
+      display: none;
+    }
+  }
+
+  &--disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
 }

@@ -1583,6 +1583,13 @@ button.swiper-pagination-bullet {
   color: #102654;
   border: 1px solid rgba(16, 38, 84, 0.2);
 }
+.btn--tabs:hover, .btn--tabs:focus-visible {
+  border-color: #102654;
+}
+.btn--tabs:disabled {
+  color: #c8c9cc;
+  border-color: rgba(16, 38, 84, 0.2);
+}
 .btn--slider {
   padding: 0;
   border: none;
@@ -3159,7 +3166,7 @@ button.swiper-pagination-bullet {
   padding: 0;
 }
 
-.footer-list__link {
+.footer-list__item {
   list-style: none;
 }
 
@@ -3210,8 +3217,30 @@ button.swiper-pagination-bullet {
 }
 
 .footer__link {
-  padding: 20px 0;
+  position: relative;
+  padding: 5px 10px;
   color: #ffffff;
+}
+.footer__link:hover::after {
+  position: absolute;
+  content: "";
+  left: 10px;
+  bottom: -5px;
+  width: calc(100% - 20px);
+  height: 1px;
+  background-color: #ffffff;
+}
+.footer__link:focus {
+  padding: 5px 10px;
+  border: 1px solid #ffffff;
+  outline: none;
+}
+.footer__link:active::after {
+  display: none;
+}
+.footer__link--disabled {
+  opacity: 0.4;
+  pointer-events: none;
 }
 
 /* @mixin hover-focus {
