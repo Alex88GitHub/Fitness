@@ -3034,6 +3034,10 @@ button.swiper-pagination-bullet {
   margin-bottom: 28px;
 }
 
+.test--error {
+  color: #ff121f;
+}
+
 .contacts__title {
   margin: 0 0 40px 20px;
 }

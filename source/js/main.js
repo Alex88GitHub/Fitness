@@ -6,6 +6,7 @@ import {initTabs} from './vendor/init-tabs';
 import './modules/render-ticket';
 import {initSliders} from './modules/init-sliders';
 import {setupVideo} from './modules/video';
+import './modules/form';
 
 // ---------------------------------
 

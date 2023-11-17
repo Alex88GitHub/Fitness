@@ -7,10 +7,10 @@ export const setupVideo = () => {
     let iframe = document.createElement('iframe');
 
     iframe.setAttribute('allowfullscreen', '');
-    iframe.setAttribute('autoplay', '1');
-    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?si=pbxpGhyXtSEgCP7r');
-    iframe.style.width = '364px';
-    iframe.style.height = '228px';
+    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?si=pbxpGhyXtSEgCP7r&autoplay=1');
+    iframe.classList.add('training-gym__video');
+    iframe.style.left = '0';
+    iframe.style.bottom = '0';
     iframe.style.border = 'none';
 
     link.remove();

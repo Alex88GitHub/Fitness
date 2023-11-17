@@ -35,7 +35,7 @@ export const jurySlider = () => {
   });
 };
 
- export const reviewSlider = () => {
+export const reviewSlider = () => {
   const sliderWrapper = document.querySelector('[data-slider="reviews-slider"]');
   const buttonPrev = document.querySelector('[data-reviews-button="prev-button"]');
   const buttonNext = document.querySelector('[data-reviews-button="next-button"]');
