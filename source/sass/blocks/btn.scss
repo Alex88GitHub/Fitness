@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 25px 54px;
+  padding: 27px 56px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: $fz-btn;
   font-weight: 700;
@@ -15,13 +15,20 @@
 
   transition: opacity $trans-default;
 
-  &--red {
-    background-color: $color-torch-red;
-  }
-
-  &--hero-buy {
+  &--hero {
     color: $color-light-main;
     user-select: none;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-light-main;
+      color: $color-egyptian-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-dark-main;
+    }
   }
 
   &--competitions {
@@ -115,13 +122,32 @@
     outline: none;
   }
 
+  &--disabled,
   &:disabled {
-    opacity: 0.3;
+    opacity: 0.5;
 
     pointer-events: none;
   }
 
+  &--disabled .training-gym__button-border,
+  &:disabled .training-gym__button-border {
+    stroke: $color-dark-main;
+    opacity: 0.4;
+  }
+
+  &--disabled .training-gym__button-circle,
+  &:disabled .training-gym__button-circle {
+    fill: $color-light-main;
+    opacity: 0.4;
+  }
+
+  &--disabled .training-gym__button-triangle,
+  &:disabled .training-gym__button-triangle {
+    fill: $color-dark-main;
+    opacity: 0.4;
+  }
   // @include hover-focus {
   //   opacity: 0.8;
   // }
 }
+

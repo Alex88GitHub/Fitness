@@ -3,11 +3,27 @@
 }
 
 .form__input-wrapper {
-  display: flex;
-  gap: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 30px;
   margin-bottom: 28px;
 }
 
-.test--error {
-  color: $color-error;
+.form__label {
+  position: relative;
+  align-self: start;
+  border-bottom: 1px solid;
+
+  &--success {
+    border-color: $color-light-slate-grey;
+  }
+
+  &--error {
+    color: $color-error;
+    border: none;
+  }
+}
+
+.form__label--error .pristine-error {
+  border-top: 1px solid $color-error;
 }

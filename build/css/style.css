@@ -1500,7 +1500,7 @@ button.swiper-pagination-bullet {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 25px 54px;
+  padding: 27px 56px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 700;
@@ -1514,15 +1514,20 @@ button.swiper-pagination-bullet {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.btn--red {
-  background-color: #ed0233;
-}
-.btn--hero-buy {
+.btn--hero {
   color: #ffffff;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+.btn--hero:hover, .btn--hero:focus-visible {
+  background-color: #ffffff;
+  color: #103aae;
+  outline: none;
+}
+.btn--hero:active {
+  color: #102654;
 }
 .btn--competitions {
   -webkit-box-pack: center;
@@ -1613,9 +1618,21 @@ button.swiper-pagination-bullet {
   border-radius: 50%;
   outline: none;
 }
-.btn:disabled {
-  opacity: 0.3;
+.btn--disabled, .btn:disabled {
+  opacity: 0.5;
   pointer-events: none;
+}
+.btn--disabled .training-gym__button-border, .btn:disabled .training-gym__button-border {
+  stroke: #102654;
+  opacity: 0.4;
+}
+.btn--disabled .training-gym__button-circle, .btn:disabled .training-gym__button-circle {
+  fill: #ffffff;
+  opacity: 0.4;
+}
+.btn--disabled .training-gym__button-triangle, .btn:disabled .training-gym__button-triangle {
+  fill: #102654;
+  opacity: 0.4;
 }
 
 .title {
@@ -2157,6 +2174,27 @@ button.swiper-pagination-bullet {
   line-height: 26px;
   color: #ffffff;
 }
+.header__phone:hover, .header__phone:focus-visible {
+  color: #1c3374;
+  outline: none;
+}
+.header__phone:active {
+  position: relative;
+  color: #102654;
+}
+.header__phone:active::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: #102654;
+}
+.header__phone--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 .hero {
   display: -webkit-box;
@@ -2339,6 +2377,7 @@ button.swiper-pagination-bullet {
 }
 
 .time-list-item {
+  position: relative;
   padding: 14px 0 14px;
   font-size: 20px;
   line-height: 20px;
@@ -2347,12 +2386,22 @@ button.swiper-pagination-bullet {
   list-style: none;
 }
 .time-list-item:hover {
+  opacity: 1;
   cursor: pointer;
+}
+.time-list-item:hover::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #d10a42;
 }
 
 .time-list-item.is-active {
   position: relative;
-  opacity: initial;
+  opacity: 1;
 }
 .time-list-item.is-active::after {
   position: absolute;
@@ -2362,6 +2411,10 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 2px;
   background-color: #d10a42;
+}
+.time-list-item--disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .tickets {
@@ -3008,7 +3061,6 @@ button.swiper-pagination-bullet {
   color: #ffffff;
   background-color: #102654;
   border: none;
-  border-bottom: 1px solid #74819c;
 }
 .input::-webkit-input-placeholder {
   color: #ffffff;
@@ -3027,15 +3079,33 @@ button.swiper-pagination-bullet {
 }
 
 .form__input-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -webkit-column-gap: 30px;
+     -moz-column-gap: 30px;
+          column-gap: 30px;
   margin-bottom: 28px;
 }
 
-.test--error {
+.form__label {
+  position: relative;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  border-bottom: 1px solid;
+}
+.form__label--success {
+  border-color: #74819c;
+}
+.form__label--error {
   color: #ff121f;
+  border: none;
+}
+
+.form__label--error .pristine-error {
+  border-top: 1px solid #ff121f;
 }
 
 .contacts__title {
