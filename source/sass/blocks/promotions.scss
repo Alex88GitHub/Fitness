@@ -11,16 +11,9 @@
   row-gap: 40px;
 }
 
-.promotions__image-block {
+.promotions__image-block-content {
   display: flex;
   grid-row: 1/-1;
-}
-
-.promotions__image-block-content {
-  position: relative;
-  padding: 40px 45px 45px;
-  background-color: $color-torch-red;
-  color: $color-light-main;
 
   h3 {
     margin: 0;
@@ -38,6 +31,10 @@
     margin: 0;
     font-size: $fz-large;
     font-weight: 300;
+  }
+
+  img {
+    object-fit: cover;
   }
 
   a {
@@ -79,6 +76,14 @@
     opacity: 0.5;
     pointer-events: none;
   }
+
+}
+
+.promotions__image-block-content div {
+  position: relative;
+  padding: 40px 45px 45px;
+  background-color: $color-torch-red;
+  color: $color-light-main;
 }
 
 .promotions__text-block-content {
@@ -122,6 +127,10 @@
 
     &:hover {
       opacity: 0.8;
+    }
+
+    &:active {
+      opacity: 1;
     }
   }
 

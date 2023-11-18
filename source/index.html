@@ -29,7 +29,7 @@
   <div class="wrapper">
     <header class="header">
       <div class="container container__header container--header">
-        <a href="">
+        <a class="header__logo" href="">
           <img src="img/svg/logo.svg" width="120" height="26" alt="Логотип Supergym.">
         </a>
         <a class="header__phone" href="tel:88005555555">8-800-555-55-55</a>
@@ -215,7 +215,7 @@
           <div class="competitions__slider-wrapper">
             <div class="competitions__jury-slider swiper" data-slider="jury-slider">
               <div class="swiper-wrapper">
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Анна Павлова</h3>
                   <img class="jury-item__image" src="img/photo-anna-pavlova.png"
                     srcset="img/photo-anna-pavlova@2x.png 2x" width="260" height="294" alt="Фотография.">
@@ -229,7 +229,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Алексей Лавров</h3>
                   <img class="jury-item__image" src="img/photo-alexey-lavrov.png"
                     srcset="img/photo-alexey-lavrov@2x.png 2x" width="260" height="294" alt="Фотография.">
@@ -243,7 +243,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Александр Пашков</h3>
                   <img class="jury-item__image" src="img/photo-alexander-pashkov.png"
                     srcset="img/photo-alexander-pashkov@2x.png 2x" width="260" height="294" alt="Фотография.">
@@ -257,7 +257,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Мария Кетова</h3>
                   <img class="jury-item__image" src="img/photo-mariya-ketova.png"
                     srcset="img/photo-mariya-ketova@2x.png 2x" width="260" height="294" alt="Фотография.">
@@ -271,7 +271,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Жан-Клод Ван Дамм</h3>
                   <img class="jury-item__image" src="img/photo-van-damm.jpg" srcset="img/photo-van-damm@2x.jpg 2x"
                     width="260" height="294" alt="Фотография.">
@@ -285,7 +285,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Арнольд Шварцнеггер</h3>
                   <img class="jury-item__image" src="img/photo-arnold.jpg" srcset="img/photo-arnold@2x.jpg 2x"
                     width="260" height="294" alt="Фотография.">
@@ -299,7 +299,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Сильвестр Сталлоне</h3>
                   <img class="jury-item__image" src="img/photo-stallone.jpg" srcset="img/photo-stallone@2x.jpg 2x"
                     width="260" height="294" alt="Фотография.">
@@ -313,7 +313,7 @@
                     </ul>
                   </div>
                 </div>
-                <div class="swiper-slide">
+                <div class="swiper-slide competitions__slide" data-jury-slide>
                   <h3 class="jury-item__title title title--jury">Боло Йенг</h3>
                   <img class="jury-item__image" src="img/photo-bolo-yeung.jpg" srcset="img/photo-bolo-yeung@2x.jpg 2x"
                     width="260" height="294" alt="Фотография.">
@@ -398,8 +398,8 @@
         <section class="promotions" id="promotions" data-test="offers">
           <h2 class="promotions__title title">Акции</h2>
           <div class="promotions__wrapper">
-            <div class="promotions__image-block">
-              <div class="promotions__image-block-content">
+            <div class="promotions__image-block-content">
+              <div>
                 <h3>Год</h3>
                 <strong>4999</strong>
                 <p>Безлимитный абонемент в тренажерный зал</p>
@@ -715,11 +715,11 @@
             <h2 class="free-lesson__title title">Бесплатное занятие</h2>
             <form class="free-lesson__form form" action="https://echo.htmlacademy.ru" method="post">
               <div class="form__input-wrapper">
-                <label class="form__label form__label--success">
-                  <input class="form__input input" type="text" name="name" placeholder="Имя">
+                <label class="form__label">
+                  <input class="form__input input" type="text" name="name" placeholder="Имя" required>
                 </label>
-                <label class="form__label form__label--success">
-                  <input class="form__input input" type="text" name="phone" placeholder="Телефон">
+                <label class="form__label">
+                  <input class="form__input input" type="text" name="phone" placeholder="Телефон" required>
                 </label>
               </div>
               <button class="form__btn btn btn--submit" type="submit">Отправить</button>

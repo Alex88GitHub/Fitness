@@ -36,8 +36,9 @@
 .container__header {
   display: flex;
   justify-content: space-between;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .container__hero {

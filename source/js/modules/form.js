@@ -2,8 +2,10 @@ import Pristine from '../vendor/pristine';
 
 const VALID_NAME_SYMBOLS = /^[a-zа-яё]{1,}$/i;
 const VALID_PHONE_SYMBOLS = /^[0-9]{1,}$/;
+// const MIN_COUNT_SYMBOLS = 1;
 const VALID_NAME_ERROR_MESSAGE = 'Введите имя кириллицей или латиницей';
 const VALID_PHONE_ERROR_MESSAGE = 'Введите цифры номера без пробелов и спецсимволов';
+// const VALID_COUNT_ERROR_MESSAGE = 'Необходимо заполнить поле';
 
 const formElement = document.querySelector('.form');
 
@@ -14,7 +16,15 @@ const labelNameElement = inputNameElement.closest('label');
 const labelPhoneElement = inputPhoneElement.closest('label');
 
 const pristine = new Pristine(
-    formElement, {classTo: 'form__label', errorTextParent: 'form__label', errorTextClass: 'form__label--error'}, false);
+    formElement,
+    {
+      classTo: 'form__label',
+      errorClass: 'form__label--error',
+      successClass: 'form__label--success',
+      errorTextParent: 'form__label',
+      errorTextClass: 'form__label--error',
+    },
+    false);
 
 const hasValidName = (value) => {
   const isValid = VALID_NAME_SYMBOLS.test(value);

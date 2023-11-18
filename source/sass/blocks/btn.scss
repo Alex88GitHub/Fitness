@@ -121,6 +121,7 @@
     &:focus-visible {
       border: 1px solid;
       border-radius: 50%;
+      outline: none;
     }
 
     &:active {

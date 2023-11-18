@@ -2,6 +2,11 @@ export const jurySlider = () => {
   const sliderWrapper = document.querySelector('[data-slider="jury-slider"]');
   const buttonPrev = document.querySelector('[data-jury-button="prev-button"]');
   const buttonNext = document.querySelector('[data-jury-button="next-button"]');
+  const slides = document.querySelectorAll('[data-jury-slide]');
+
+  slides.forEach((slide) => {
+    slide.setAttribute('tabindex', '1');
+  });
 
   return new window.Swiper(sliderWrapper, {
     direction: 'horizontal',

@@ -4,7 +4,7 @@
   "use strict";
   var e = {
       en: {
-          required: "This field is required",
+          required: "Необходимо заполнить поле",
           email: "This field requires a valid e-mail address",
           number: "This field requires a number",
           integer: "This field requires an integer value",

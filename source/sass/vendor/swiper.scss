@@ -58,8 +58,14 @@
   position: relative;
   transition-property: transform;
 
-  &:hover .jury-item__info-wrapper {
+  &:hover .jury-item__info-wrapper,
+  &:focus-visible .jury-item__info-wrapper {
     display: block;
+  }
+
+  &:hover .jury-item__title,
+  &:focus-visible .jury-item__title {
+    display: none;
   }
 }
 .swiper-slide-invisible-blank {
