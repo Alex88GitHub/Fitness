@@ -1,5 +1,4 @@
 .accordion {
-  //max-width: 500px;
   margin: 0 auto;
 
   & & {
@@ -13,7 +12,7 @@
 
   &__element {
     position: relative;
-    padding: 25px 0 20px;
+    padding: 25px 0;
 
     &::after {
       position: absolute;
@@ -57,7 +56,7 @@
     cursor: pointer;
 
     &.is-active {
-      background-color: #1c3374;
+      background-color: $color-resolution-blue;
 
       &::before {
         background-color: $color-light-main;
@@ -86,6 +85,5 @@
 
 .accordion__title-wrapper {
   display: flex;
-  // justify-content: space-between;
   align-items: center;
 }

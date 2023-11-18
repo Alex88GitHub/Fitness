@@ -31,3 +31,15 @@
     pointer-events: none;
   }
 }
+
+.header__logo {
+  &--background {
+    padding: 22px;
+    background-color: $color-dark-main;
+
+    &:hover,
+    &:focus {
+      opacity: 0.5;
+    }
+  }
+}

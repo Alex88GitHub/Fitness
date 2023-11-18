@@ -44,6 +44,11 @@
     position: absolute;
     left: 45px;
     bottom: 50px;
+    font-size: $fz-small;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
     color: $color-light-main;
 
     &::after {
@@ -55,6 +60,24 @@
       height: 1px;
       background-color: $color-light-main;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus-visible {
+      padding: 10px;
+      border: 1px solid $color-light-main;
+    }
+
+    &:active {
+      opacity: 1;
+    }
+  }
+
+  &--disabled a {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }
 
@@ -62,7 +85,7 @@
   position: relative;
   padding: 30px 35px 35px;
   border: 7px solid;
-  border-image:  linear-gradient(163deg, $color-crimson, $color-smalt) 35;
+  border-image:  $border-gradient;
 
   h3 {
     margin: 0;
@@ -80,6 +103,11 @@
     position: absolute;
     left: 35px;
     bottom: 40px;
+    font-size: $fz-small;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
     color: $color-resolution-blue;
 
     &::after {
@@ -91,5 +119,14 @@
       height: 1px;
       background-color: $color-resolution-blue;
     }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &--disabled a {
+    opacity: 0.5;
+    pointer-events: none;
   }
 }

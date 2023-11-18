@@ -15,7 +15,8 @@
 
   transition: opacity $trans-default;
 
-  &--hero {
+  &--hero,
+  &--competitions {
     color: $color-light-main;
     user-select: none;
 
@@ -33,14 +34,23 @@
 
   &--competitions {
     justify-content: center;
-    color: $color-light-main;
-    user-select: none;
   }
 
   &--submit {
     display: block;
     width: 100%;
     color: $color-light-main;
+
+    &:hover,
+    &:focus-visible {
+      background-color: $color-light-main;
+      color: $color-egyptian-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-dark-main;
+    }
   }
 
   &--accordion {
@@ -72,6 +82,15 @@
       transform: translate(-50%, -50%);
       background-color: $color-resolution-blue;
     }
+
+    &:hover:not(.is-active) {
+      background-color: $color-resolution-blue;
+
+      &::before,
+      &::after {
+        background-color: $color-light-main;
+      }
+    }
   }
 
   &--tabs {
@@ -100,7 +119,7 @@
 
     &:hover,
     &:focus-visible {
-      border: 2px solid;
+      border: 1px solid;
       border-radius: 50%;
     }
 
@@ -134,7 +153,6 @@
   &--disabled,
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
   }
 

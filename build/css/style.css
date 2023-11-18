@@ -365,7 +365,7 @@ button,
 }
 .accordion__element {
   position: relative;
-  padding: 25px 0 20px;
+  padding: 25px 0;
 }
 .accordion__element::after {
   position: absolute;
@@ -1514,35 +1514,38 @@ button.swiper-pagination-bullet {
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
-.btn--hero {
+.btn--hero, .btn--competitions {
   color: #ffffff;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
 }
-.btn--hero:hover, .btn--hero:focus-visible {
+.btn--hero:hover, .btn--hero:focus-visible, .btn--competitions:hover, .btn--competitions:focus-visible {
   background-color: #ffffff;
   color: #103aae;
   outline: none;
 }
-.btn--hero:active {
+.btn--hero:active, .btn--competitions:active {
   color: #102654;
 }
 .btn--competitions {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  color: #ffffff;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
 }
 .btn--submit {
   display: block;
   width: 100%;
   color: #ffffff;
+}
+.btn--submit:hover, .btn--submit:focus-visible {
+  background-color: #ffffff;
+  color: #103aae;
+  outline: none;
+}
+.btn--submit:active {
+  color: #102654;
 }
 .btn--accordion {
   position: relative;
@@ -1576,6 +1579,12 @@ button.swiper-pagination-bullet {
           transform: translate(-50%, -50%);
   background-color: #1c3374;
 }
+.btn--accordion:hover:not(.is-active) {
+  background-color: #1c3374;
+}
+.btn--accordion:hover:not(.is-active)::before, .btn--accordion:hover:not(.is-active)::after {
+  background-color: #ffffff;
+}
 .btn--tabs {
   font-size: 18px;
   font-weight: 400;
@@ -1601,7 +1610,7 @@ button.swiper-pagination-bullet {
           align-items: center;
 }
 .btn--slider:hover, .btn--slider:focus-visible {
-  border: 2px solid;
+  border: 1px solid;
   border-radius: 50%;
 }
 .btn--slider:active {
@@ -2201,6 +2210,14 @@ button.swiper-pagination-bullet {
 .header__phone--disabled {
   opacity: 0.5;
   pointer-events: none;
+}
+
+.header__logo--background {
+  padding: 22px;
+  background-color: #102654;
+}
+.header__logo--background:hover, .header__logo--background:focus {
+  opacity: 0.5;
 }
 
 .hero {
@@ -2926,6 +2943,11 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: 45px;
   bottom: 50px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
   color: #ffffff;
 }
 .promotions__image-block-content a::after {
@@ -2937,13 +2959,28 @@ button.swiper-pagination-bullet {
   height: 1px;
   background-color: #ffffff;
 }
+.promotions__image-block-content a:hover {
+  opacity: 0.8;
+}
+.promotions__image-block-content a:focus-visible {
+  padding: 10px;
+  border: 1px solid #ffffff;
+}
+.promotions__image-block-content a:active {
+  opacity: 1;
+}
+.promotions__image-block-content--disabled a {
+  opacity: 0.5;
+  pointer-events: none;
+}
 
 .promotions__text-block-content {
   position: relative;
   padding: 30px 35px 35px;
   border: 7px solid;
-  -o-border-image: linear-gradient(163deg, #d10a42, #00359f) 35;
-     border-image: linear-gradient(163deg, #d10a42, #00359f) 35;
+  -o-border-image: linear-gradient(to right bottom, #d10a42, #00359f) 35;
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 35;
+     border-image: linear-gradient(to right bottom, #d10a42, #00359f) 35;
 }
 .promotions__text-block-content h3 {
   margin: 0;
@@ -2959,6 +2996,11 @@ button.swiper-pagination-bullet {
   position: absolute;
   left: 35px;
   bottom: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
   color: #1c3374;
 }
 .promotions__text-block-content a::after {
@@ -2969,6 +3011,13 @@ button.swiper-pagination-bullet {
   width: 100%;
   height: 1px;
   background-color: #1c3374;
+}
+.promotions__text-block-content a:hover {
+  opacity: 0.8;
+}
+.promotions__text-block-content--disabled a {
+  opacity: 0.5;
+  pointer-events: none;
 }
 
 .questions-answers__title {
