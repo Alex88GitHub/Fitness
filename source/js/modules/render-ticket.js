@@ -101,6 +101,10 @@ export const getPrice = (element) => {
   }
 };
 
+period.forEach((element) => {
+  element.setAttribute('tabindex', '0');
+});
+
 const onPeriodClickHandler = (evt) => {
   period.forEach((element) => {
     element.classList.remove('is-active');

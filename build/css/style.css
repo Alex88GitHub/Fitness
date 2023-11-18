@@ -1536,9 +1536,37 @@ button.swiper-pagination-bullet {
   color: #102654;
 }
 .btn--competitions {
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+.btn--tickets {
+  width: 100%;
+  padding: 25px 41px;
+  color: #102654;
+  background-color: #ffffff;
+  border: 2px solid #102654;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+.btn--tickets.is-active {
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: rgba(255, 255, 255, 0);
+  color: #ffffff;
+}
+.btn--tickets:hover, .btn--tickets:focus-visible {
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: rgba(255, 255, 255, 0);
+  color: #ffffff;
+  outline: none;
+}
+.btn--tickets:active {
+  color: rgba(255, 255, 255, 0.7);
+  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+  border: rgba(255, 255, 255, 0);
 }
 .btn--submit {
   display: block;
@@ -1623,8 +1651,8 @@ button.swiper-pagination-bullet {
 .btn--slider:active {
   background-color: #102654;
 }
-.btn--slider:active svg path {
-  stroke: #ffffff;
+.btn--slider:active svg {
+  color: #ffffff;
 }
 .btn--slider:disabled {
   opacity: 0.3;
@@ -2427,11 +2455,14 @@ button.swiper-pagination-bullet {
   opacity: 0.5;
   list-style: none;
 }
-.time-list-item:hover {
+.time-list-item:focus-visible {
+  outline: none;
+}
+.time-list-item:hover, .time-list-item:focus-visible {
   opacity: 1;
   cursor: pointer;
 }
-.time-list-item:hover::after {
+.time-list-item:hover::after, .time-list-item:focus-visible::after {
   position: absolute;
   content: "";
   left: 0;
@@ -2500,13 +2531,18 @@ button.swiper-pagination-bullet {
 }
 
 .visits-item {
-  padding: 65px 77px;
+  padding: 65px 63px;
   text-align: center;
   list-style: none;
   background-color: #ffffff;
+  border: 7px solid rgba(255, 255, 255, 0);
 }
-.visits-item--current {
-  border: 7px solid;
+.visits-item:hover {
+  -o-border-image: linear-gradient(to right bottom, #d10a42, #00359f) 35;
+     border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 35;
+     border-image: linear-gradient(to right bottom, #d10a42, #00359f) 35;
+}
+.visits-item:focus-within {
   -o-border-image: linear-gradient(to right bottom, #d10a42, #00359f) 35;
      border-image: -webkit-gradient(linear, left top, right bottom, from(#d10a42), to(#00359f)) 35;
      border-image: linear-gradient(to right bottom, #d10a42, #00359f) 35;
@@ -2533,6 +2569,10 @@ button.swiper-pagination-bullet {
           align-items: center;
   margin-bottom: 29px;
   padding: 54px 18px 6px;
+}
+
+.visits-item__price-wrapper svg {
+  z-index: 2;
 }
 
 .visits-item__background {
@@ -2569,22 +2609,6 @@ button.swiper-pagination-bullet {
 
 .visits-item__btn {
   display: block;
-  width: 100%;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-}
-.visits-item__btn--buy {
-  padding: 25px 41px;
-  color: #102654;
-  background-color: #ffffff;
-  border: 2px solid #102654;
-}
-.visits-item__btn--buy-current {
-  background: linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
-  border: transparent;
-  color: #ffffff;
 }
 
 .competitions {
@@ -2685,10 +2709,6 @@ button.swiper-pagination-bullet {
 
 .competitions__month {
   margin-bottom: 5px;
-}
-
-.competitions__btn {
-  width: 100%;
 }
 
 .competitions__jury-title {
@@ -3259,6 +3279,39 @@ button.swiper-pagination-bullet {
 
 .social-list__item {
   list-style: none;
+}
+
+.social-list__link {
+  position: relative;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.social-list__link:hover, .social-list__link:focus-visible {
+  background-color: #103aae;
+  outline: none;
+}
+.social-list__link:active {
+  background-color: #102654;
+}
+.social-list__link--disabled {
+  background-color: rgba(255, 255, 255, 0.7);
+  pointer-events: none;
+}
+.social-list__link:hover svg, .social-list__link:focus-visible svg {
+  color: #ffffff;
+}
+
+.social-list__link svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #030a1a;
 }
 
 .footer__logo {

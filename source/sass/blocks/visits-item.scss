@@ -1,11 +1,19 @@
 .visits-item {
-  padding: 65px 77px;
+  padding: 65px 63px;
   text-align: center;
   list-style: none;
   background-color: $color-light-main;
+  border: 7px solid $color-transparent;
 
-  &--current {
-    border: 7px solid;
+  // &--current {
+  //   border-image:  $border-gradient;
+  // }
+
+  &:hover {
+    border-image:  $border-gradient;
+  }
+
+  &:focus-within {
     border-image:  $border-gradient;
   }
 }
@@ -27,6 +35,10 @@
   align-items: center;
   margin-bottom: 29px;
   padding: 54px 18px 6px;
+}
+
+.visits-item__price-wrapper svg {
+  z-index: 2;
 }
 
 .visits-item__background {
@@ -60,19 +72,4 @@
 
 .visits-item__btn {
   display: block;
-  width: 100%;
-  user-select: none;
-
-  &--buy {
-    padding: 25px 41px;
-    color: $color-dark-main;
-    background-color: $color-light-main;
-    border: 2px solid $color-dark-main;
-  }
-
-  &--buy-current {
-    background: $button-gradient;
-    border: transparent;
-    color: $color-light-main;
-  }
 }

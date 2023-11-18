@@ -33,7 +33,37 @@
   }
 
   &--competitions {
+    width: 100%;
     justify-content: center;
+  }
+
+  &--tickets {
+    width: 100%;
+    padding: 25px 41px;
+    color: $color-dark-main;
+    background-color: $color-light-main;
+    border: 2px solid $color-dark-main;
+    user-select: none;
+
+    &.is-active {
+      background: $button-gradient;
+      border: $color-transparent;
+      color: $color-light-main;
+    }
+
+    &:hover,
+    &:focus-visible {
+      background: $button-gradient;
+      border: $color-transparent;
+      color: $color-light-main;
+      outline: none;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.7);
+      background: $button-gradient;
+      border: $color-transparent;
+    }
   }
 
   &--submit {
@@ -128,8 +158,8 @@
       background-color: $color-dark-main;
     }
 
-    &:active svg path{
-      stroke: $color-light-main;
+    &:active svg{
+      color: $color-light-main;
     }
 
     &:disabled {
