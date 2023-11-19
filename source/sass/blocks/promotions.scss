@@ -63,8 +63,19 @@
     }
 
     &:focus-visible {
-      padding: 10px;
-      border: 1px solid $color-light-main;
+      outline: none;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-light-main;
+        background-color: initial;
+      }
     }
 
     &:active {
@@ -127,6 +138,22 @@
 
     &:hover {
       opacity: 0.8;
+    }
+
+    &:focus-visible {
+      outline: none;
+
+      &::after {
+        position: absolute;
+        content: "";
+        left: 50%;
+        top: 50%;
+        width: calc(100% + 20px);
+        height: calc(100% + 20px);
+        transform: translate(-50%, -50%);
+        border: 1px solid $color-resolution-blue;
+        background-color: initial;
+      }
     }
 
     &:active {

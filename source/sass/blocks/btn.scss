@@ -173,13 +173,67 @@
     pointer-events: none;
   }
 
-  &--play-video {
-    display: none;
+  &--play {
+    width: 100px;
+    height: 100px;
     padding: 0;
-    border: none;
+
+    border: 2px solid rgba(237, 2, 53, 0.2);
     border-radius: 50%;
     outline: none;
+
+    &::before {
+      position: absolute;
+      content: "";
+      width: 72px;
+      height: 72px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: $play-button-gradient;
+    }
+
+    &:focus-visible {
+      border-color: $color-dark-main;
+
+      &::before {
+        background: $color-light-main;
+      }
+    }
+
+    &:focus-visible svg {
+      color: $color-dark-main;
+    }
+
+    &:disabled {
+      opacity: 0.4;
+      border-color: $color-dark-main;
+
+      &::before {
+        background: $color-light-main;
+      }
+    }
+
+    &:disabled svg {
+      color: $color-dark-main;
+    }
   }
+
+  &--play svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $color-light-main;
+  }
+  // &--play-video {
+  //   display: none;
+  //   padding: 0;
+  //   border: none;
+  //   border-radius: 50%;
+  //   outline: none;
+  // }
 
   &--disabled,
   &:disabled {
@@ -187,23 +241,26 @@
     pointer-events: none;
   }
 
-  &--disabled .training-gym__button-border,
-  &:disabled .training-gym__button-border {
-    stroke: $color-dark-main;
-    opacity: 0.4;
-  }
+  // &--disabled .training-gym__button-border,
+  // &:disabled .training-gym__button-border {
+  //   stroke: $color-dark-main;
+  //   opacity: 0.4;
+  // }
 
-  &--disabled .training-gym__button-circle,
-  &:disabled .training-gym__button-circle {
-    fill: $color-light-main;
-    opacity: 0.4;
-  }
+  // &--disabled .training-gym__button-circle,
+  // &:disabled .training-gym__button-circle {
+  //   fill: $color-light-main;
+  //   opacity: 0.4;
+  // }
 
-  &--disabled .training-gym__button-triangle,
-  &:disabled .training-gym__button-triangle {
-    fill: $color-dark-main;
-    opacity: 0.4;
-  }
+  // &--disabled .training-gym__button-triangle,
+  // &:disabled .training-gym__button-triangle {
+  //   fill: $color-dark-main;
+  //   opacity: 0.4;
+  // }
+
+
+
   // @include hover-focus {
   //   opacity: 0.8;
   // }

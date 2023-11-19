@@ -12,17 +12,15 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-600.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-800.woff2" as="font" type="font/woff2"
-    crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-300.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="preload" href="fonts/rouble.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-  <link rel="icon" href="favicon.ico">
-  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <!-- <link rel="icon" href="favicon.ico">
+  <link rel="manifest" href="manifest.json"> -->
 </head>
 
 <body>
@@ -70,45 +68,12 @@
               <img class="training-gym__poster" src="img/video-poster.png" width="364" height="228"
                 alt="Видео-обзор зала.">
             </a>
-            <button class="training-gym__button btn btn--play-video" aria-label="Смотреть видео">
-              <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" fill="none">
-                <circle class="training-gym__button-border" opacity="0.2" cx="50" cy="50" r="49" stroke="#ED0233"
-                  stroke-width="2" />
-                <circle class="training-gym__button-circle" cx="50" cy="50" r="36" fill="url(#paint0_linear_1330_71)" />
-                <path class="training-gym__button-triangle" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
-                  fill="white" />
-                <defs>
-                  <linearGradient id="paint0_linear_1330_71" x1="28.2373" y1="14" x2="90.1653" y2="21.664"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#ED0233" />
-                    <stop offset="1" stop-color="#003EB7" />
-                  </linearGradient>
-                </defs>
+            <button class="training-gym__button btn btn--play" aria-label="Смотреть видео">
+              <svg width="22" height="22">
+                <use href="img/sprite.svg#play-button-icon"></use>
               </svg>
             </button>
           </div>
-          <!-- <iframe class="training-gym__iframe" width="364" height="228"
-            src="https://www.youtube.com/embed/9TZXsZItgdw?si=pbxpGhyXtSEgCP7r" frameborder="0"
-            allowfullscreen></iframe> -->
-          <!-- <img class="training-gym__poster" src="img/video-poster.png" width="364" height="228" alt="Видео-обзор зала."> -->
-          <!-- <div class="training-gym__video-background">
-            <svg class="training-gym__play-btn" xmlns="http://www.w3.org/2000/svg" width="100" height="100"
-              viewBox="0 0 100 100" fill="none">
-              <circle class="training-gym__play-btn--border" opacity="0.2" cx="50" cy="50" r="49" stroke="#ED0233"
-                stroke-width="2" />
-              <circle class="training-gym__play-btn--circle" cx="50" cy="50" r="36"
-                fill="url(#paint0_linear_1330_71)" />
-              <path class="training-gym__play-btn--stroke" d="M59 49.5L46.25 56.8612L46.25 42.1388L59 49.5Z"
-                fill="white" />
-              <defs>
-                <linearGradient id="paint0_linear_1330_71" x1="28.2373" y1="14" x2="90.1653" y2="21.664"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#ED0233" />
-                  <stop offset="1" stop-color="#003EB7" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </div> -->
         </section>
       </div>
       <div class="container container__tickets container--background-light">
@@ -131,20 +96,10 @@
                 <svg width="30" height="42">
                   <use href="img/sprite.svg#rouble-icon"></use>
                 </svg>
-                <!-- <svg class="visits-item__price-unit" width="30" height="42" viewBox="0 0 30 42" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <path fill-rule="evenodd" clip-rule="evenodd" d="M0 17H6V23H0V17Z" fill="#102654" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M3.65854 28.3214V18H9.65854V28.3214H21V34.3214H9.65854V42H3.65854V34.3214H0V28.3214H3.65854Z"
-                    fill="#102654" />
-                  <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M18.5 6H10V17H18.5C21.5376 17 24 14.5376 24 11.5C24 8.46243 21.5376 6 18.5 6ZM4 0V23H18.5C24.8513 23 30 17.8513 30 11.5C30 5.14873 24.8513 0 18.5 0H4Z"
-                    fill="#102654" />
-                </svg> -->
               </div>
               <a class="visits-item__btn btn btn--tickets" href="#">Купить абонемент</a>
             </li>
-            <li class="visits-list__item visits-item visits-item--current">
+            <li class="visits-list__item visits-item is-active">
               <h3 class="visits-item__title title">Дневной</h3>
               <span class="visits-item__description">с 8:00 до 17:00</span>
               <div class="visits-item__price-wrapper" data-count="1700">
@@ -154,7 +109,7 @@
                   <use href="img/sprite.svg#rouble-icon"></use>
                 </svg>
               </div>
-              <a class="visits-item__btn btn btn--tickets" href="#">Купить
+              <a class="visits-item__btn btn btn--tickets is-active" href="#">Купить
                 абонемент</a>
             </li>
             <li class="visits-list__item visits-item">

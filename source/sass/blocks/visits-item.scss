@@ -5,9 +5,9 @@
   background-color: $color-light-main;
   border: 7px solid $color-transparent;
 
-  // &--current {
-  //   border-image:  $border-gradient;
-  // }
+  &.is-active {
+    border-image:  $border-gradient;
+  }
 
   &:hover {
     border-image:  $border-gradient;

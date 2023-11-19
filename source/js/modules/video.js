@@ -6,6 +6,10 @@ export const setupVideo = () => {
   video.addEventListener('click', () => {
     let iframe = document.createElement('iframe');
 
+    if (button.hasAttribute('disabled')) {
+      return;
+    }
+
     iframe.setAttribute('allowfullscreen', '');
     iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?si=pbxpGhyXtSEgCP7r&autoplay=1');
     iframe.classList.add('training-gym__video');

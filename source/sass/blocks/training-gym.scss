@@ -86,20 +86,16 @@
     cursor: pointer;
   }
 
-  &:hover .training-gym__button-border,
-  &:focus-visible .training-gym__button-border {
-    stroke: $color-dark-main;
-    opacity: 1;
+  &:hover .btn--play {
+    border-color: $color-dark-main;
+
+    &::before {
+      background: $color-light-main;
+    }
   }
 
-  &:hover .training-gym__button-circle,
-  &:focus-visible .training-gym__button-circle {
-    fill: $color-light-main;
-  }
-
-  &:hover .training-gym__button-triangle,
-  &:focus-visible .training-gym__button-triangle {
-    fill: $color-dark-main;
+  &:hover .btn--play svg {
+    color: $color-dark-main;
   }
 }
 
@@ -108,7 +104,5 @@
   z-index: 2;
   top: 50%;
   left: 50%;
-  width: 100px;
-  height: 100px;
   transform: translate(-50%, -50%);
 }

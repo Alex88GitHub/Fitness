@@ -31,6 +31,10 @@ export class Accordions {
       this.closeAccordion(element);
       return;
     }
+
+    const buttonElement = element.querySelector('[data-accordion="button"]');
+    if (buttonElement.hasAttribute('disabled')) return;
+
     this.openAccordion(element);
   }
 
