@@ -1,3 +1,10 @@
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
 .footer__logo {
   padding: 10px 0;
 
@@ -13,13 +20,6 @@
   &:active {
     opacity: 0.8;
   }
-}
-
-.footer__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0;
 }
 
 .footer__navigation-list {

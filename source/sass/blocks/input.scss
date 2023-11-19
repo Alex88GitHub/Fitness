@@ -1,5 +1,4 @@
 .input {
-  // display: block;
   width: 190px;
   padding: 0;
   padding-top: 7px;
@@ -11,7 +10,6 @@
   color: $color-light-main;
   background-color: $color-dark-main;
   border: none;
-  // border-bottom: 1px solid $color-light-slate-grey;
 
   &::placeholder {
     color: $color-light-main;

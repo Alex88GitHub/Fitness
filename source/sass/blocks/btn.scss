@@ -1,6 +1,6 @@
 .btn {
   display: inline-flex;
-  padding: 27px 56px;
+  padding: 27px 54px;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: $fz-btn;
   font-weight: 700;
@@ -15,10 +15,21 @@
 
   transition: opacity $trans-default;
 
+  &--hero {
+    width: 230px;
+    justify-self: end;
+  }
+
   &--hero,
   &--competitions {
     color: $color-light-main;
     user-select: none;
+
+    @include vp-1365 {
+      width: 100%;
+      justify-content: center;
+      padding: 22px 0;
+    }
 
     &:hover,
     &:focus-visible {
@@ -39,9 +50,7 @@
 
   &--tickets {
     width: 100%;
-    padding: 25px 41px;
-    color: $color-dark-main;
-    background-color: $color-light-main;
+    padding: 27px 44px;
     border: 2px solid $color-dark-main;
     user-select: none;
 
@@ -53,16 +62,33 @@
 
     &:hover,
     &:focus-visible {
+      padding: 29px 46px;
       background: $button-gradient;
-      border: $color-transparent;
+      border: none;
       color: $color-light-main;
       outline: none;
+
+      @include vp-1365 {
+        padding: 24px 46px;
+      }
     }
 
     &:active {
       color: rgba(255, 255, 255, 0.7);
       background: $button-gradient;
-      border: $color-transparent;
+    }
+
+    &:hover.is-active,
+    &:focus-visible.is-active {
+      padding: 27px 44px;
+
+      @include vp-1365 {
+        padding: 22px 44px;
+      }
+    }
+
+    @include vp-1365 {
+      padding: 22px 44px;
     }
   }
 
@@ -192,6 +218,11 @@
       transform: translate(-50%, -50%);
       border-radius: 50%;
       background: $play-button-gradient;
+
+      @include vp-1365 {
+        width: 52px;
+        height: 52px;
+      }
     }
 
     &:focus-visible {
@@ -218,6 +249,10 @@
     &:disabled svg {
       color: $color-dark-main;
     }
+
+    @include vp-1365 {}
+    width: 72px;
+    height: 72px;
   }
 
   &--play svg {

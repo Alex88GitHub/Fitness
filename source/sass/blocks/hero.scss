@@ -2,6 +2,21 @@
   display: flex;
   gap: 70px;
   flex-wrap: wrap;
+  margin: 0 auto;
+
+  @include vp-1365 {
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 0;
+  }
+}
+
+.hero img {
+  @include vp-767 {
+    display: none;
+  }
 }
 
 .hero__text-block {
@@ -10,29 +25,75 @@
   grid-template-rows: repeat(3, auto);
   padding-top: 62px;
   padding-bottom: 62px;
+
+  @include vp-1365 {
+    grid-template-columns: auto auto;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    column-gap: 26px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: auto auto;
+    padding-top: 35px;
+    padding-bottom: 0;
+  }
 }
 
 .hero__description-wrapper {
   width: fit-content;
   align-self: center;
+
+  @include vp-767 {
+    align-self: self-end;
+  }
 }
 
 .hero__description {
+  margin: 0;
+  font-size: $fz-small;
+  line-height: 22px;
   color: $color-light-main;
+
+  @include vp-767 {
+    line-height: 20px;
+  }
 }
 
 .hero__title-wrapper {
   width: 270px;
   text-align: right;
+
+  @include vp-1365 {
+    width: 185px;
+  }
 }
 
 .hero__title-city {
   margin-bottom: 10px;
   color: $color-light-main;
+  text-transform: uppercase;
+
+  @include vp-767 {
+    margin-bottom: 14px;
+  }
 }
 
 .hero__title {
   margin-bottom: 50px;
   color: $color-light-main;
   text-transform: uppercase;
+
+  @include vp-767 {
+    margin-bottom: 0;
+  }
+}
+
+.hero__btn {
+  grid-column: 2/-1;
+
+  @include vp-767 {
+    grid-column: 1/-1;
+    margin-top: 60px;
+  }
 }

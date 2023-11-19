@@ -12,15 +12,17 @@
     crossorigin="anonymous">
   <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-600.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
+  <link rel="preload" href="fonts/alumni-sans-v18-cyrillic_latin-800.woff2" as="font" type="font/woff2"
+    crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-300.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-regular.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
   <link rel="preload" href="fonts/roboto-condensed-v27-cyrillic_latin-700.woff2" as="font" type="font/woff2"
     crossorigin="anonymous">
-  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
-  <!-- <link rel="icon" href="favicon.ico">
-  <link rel="manifest" href="manifest.json"> -->
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon-32x32.png" type="image/png">
+
 </head>
 
 <body>
@@ -45,14 +47,19 @@
             <div class="hero__title-wrapper">
               <h2 class="hero__title-city title">Омск</h2>
               <h1 class="hero__title title">Фитнес центр</h1>
-              <a class="btn btn--hero" href="#tickets">Купить абонемент</a>
             </div>
+            <a class="hero__btn btn btn--hero" href="#tickets">Купить абонемент</a>
           </div>
-          <img src="img/hero-image.png" srcset="img/hero-image@2x.png 2x" width="500" height="524" alt="Супермен.">
+          <picture>
+            <source media="(max-width: 1365px)" srcset="img/hero-image-tablet.jpg 1x, img/hero-image-tablet@2x.jpg 2x"
+              width="324" height="390">
+            <img src="img/hero-image-desktop.jpg" srcset="img/hero-image-desktop@2x.jpg 2x" width="500" height="524"
+              alt="Супермен.">
+          </picture>
         </section>
       </div>
-      <div class="container">
-        <section class="training-gym" data-test="about">
+      <div class="container" data-test="about">
+        <section class="training-gym">
           <div class="training-gym__text-content">
             <h2>Тренажерный зал</h2>
             <h3>Просторный зал площадью 900 кв/м</h3>
@@ -61,23 +68,35 @@
             <p>В зале расположены отдельная зона для Crossfit и кардио-зона с 40 тренажерами. Также в фитнес центре есть
               несколько оборудованных залов для различных видов групповых занятий. </p>
           </div>
-          <img src="img/training-gym-photo.png" srcset="img/training-gym-photo@2x.png 2x" width="660" height="400"
-            alt="Зал для силовых тренеровок.">
+          <picture>
+            <source media="(max-width: 1365px)"
+              srcset="img/training-gym-photo-tablet.jpg 1x, img/training-gym-photo-tablet@2x.jpg 2x" width="678"
+              height="345">
+            <img src="img/training-gym-photo-desktop.jpg" srcset="img/training-gym-photo-desktop@2x.jpg 2x" width="660"
+              height="400" alt="Зал для силовых тренеровок.">
+          </picture>
           <div class="training-gym__video">
             <a class="training-gym__video-link" href="https://www.youtube.com/watch?v=9TZXsZItgdw">
-              <img class="training-gym__poster" src="img/video-poster.png" width="364" height="228"
-                alt="Видео-обзор зала.">
+              <picture>
+                <source media="(max-width: 1365px)"
+                  srcset="img/video-poster-tablet.jpg 1x, img/video-poster-tablet@2x.jpg 2x" width="265" height="167">
+                <img class="training-gym__poster" src="img/video-poster-desktop.jpg"
+                  srcset="img/video-poster-desktop@2x.jpg 2x" width="364" height="228" alt="Видео-обзор зала.">
+              </picture>
             </a>
             <button class="training-gym__button btn btn--play" aria-label="Смотреть видео">
-              <svg width="22" height="22">
-                <use href="img/sprite.svg#play-button-icon"></use>
-              </svg>
+
+
+                <svg width="22" height="22" role="img">
+                  <use href="img/sprite.svg#play-button-icon"></use>
+                </svg>
+
             </button>
           </div>
         </section>
       </div>
-      <div class="container container__tickets container--background-light">
-        <section class="tickets" id="tickets" data-test="price">
+      <div class="container container__tickets container--background-light" data-test="price">
+        <section class="tickets" id="tickets">
           <h2 class="tickets__title title">Абонементы</h2>
           <div class="tickets__time-list-wrapper">
             <ul class="tickets__time-list time-list">
@@ -93,7 +112,7 @@
               <div class="visits-item__price-wrapper" data-count="5000">
                 <span class="visits-item__background">5000</span>
                 <p class="visits-item__price-title title">5000</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use href="img/sprite.svg#rouble-icon"></use>
                 </svg>
               </div>
@@ -105,7 +124,7 @@
               <div class="visits-item__price-wrapper" data-count="1700">
                 <span class="visits-item__background">1700</span>
                 <p class="visits-item__price-title title">1700</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use href="img/sprite.svg#rouble-icon"></use>
                 </svg>
               </div>
@@ -118,7 +137,7 @@
               <div class="visits-item__price-wrapper" data-count="2700">
                 <span class="visits-item__background">2700</span>
                 <p class="visits-item__price-title title">2700</p>
-                <svg width="30" height="42">
+                <svg width="30" height="42" role="img">
                   <use href="img/sprite.svg#rouble-icon"></use>
                 </svg>
               </div>
@@ -128,8 +147,8 @@
         </section>
         <img class="tickets__bg" src="img/disks.png" srcset="img/disks@2x.png 2x" width="287" height="494" alt="">
       </div>
-      <div class="container container__section">
-        <section class="competitions" data-test="games">
+      <div class="container container__section" data-test="games">
+        <section class="competitions">
           <div class="competitions__wrapper">
             <div class="competitions__info-wrapper">
               <div class="competitions__title-wrapper">
@@ -274,20 +293,20 @@
               </div>
             </div>
             <div class="jury-swiper__prev-btn btn btn--slider" data-jury-button="prev-button">
-              <svg width="18" height="34">
+              <svg width="18" height="34" role="img">
                 <use href="img/sprite.svg#left-button-slider-icon"></use>
               </svg>
             </div>
             <div class="jury-swiper__next-btn btn btn--slider" data-jury-button="next-button">
-              <svg width="18" height="34">
+              <svg width="18" height="34" role="img">
                 <use href="img/sprite.svg#right-button-slider-icon"></use>
               </svg>
             </div>
           </div>
         </section>
       </div>
-      <div class="container container__section container--background-light">
-        <section class="advantages" data-test="features">
+      <div class="container container__section container--background-light" data-test="features">
+        <section class="advantages">
           <h2 class="advantages__title title">Наши преимущества</h2>
           <div class="advantages__wrapper">
             <div class="advantages__block-content">
@@ -296,8 +315,8 @@
                 <span>кв/м</span>
               </div>
               <div>
-                <h3>Площадь</h4>
-                  <p>Занимайтесь без очередей и толкучки</p>
+                <h3>Площадь</h3>
+                <p>Занимайтесь без очередей и толкучки</p>
               </div>
             </div>
             <div class="advantages__big-block-content">
@@ -311,8 +330,8 @@
                 <span>машин</span>
               </div>
               <div>
-                <h3>Собственная парковка</h4>
-                  <p>Вы всегда найдете место для своей машины на нашей парковке</p>
+                <h3>Собственная парковка</h3>
+                <p>Вы всегда найдете место для своей машины на нашей парковке</p>
               </div>
             </div>
             <div class="advantages__block-content">
@@ -338,8 +357,8 @@
           </div>
         </section>
       </div>
-      <div class="container container__section">
-        <section class="promotions" id="promotions" data-test="offers">
+      <div class="container container__section" data-test="offers">
+        <section class="promotions" id="promotions">
           <h2 class="promotions__title title">Акции</h2>
           <div class="promotions__wrapper">
             <div class="promotions__image-block-content">
@@ -365,8 +384,8 @@
           </div>
         </section>
       </div>
-      <div class="container container__section container--background-light">
-        <section class="questions-answers" data-test="faq">
+      <div class="container container__section container--background-light" data-test="faq">
+        <section class="questions-answers">
           <h2 class="questions-answers__title title">Вопросы и ответы</h2>
           <div class="questions-answers__wrapper" data-tabs="parent">
             <div class="tabs__controls" data-tabs="controls">
@@ -614,8 +633,8 @@
           </div>
         </section>
       </div>
-      <div class="container container__section">
-        <section class="reviews" data-test="reviews">
+      <div class="container container__section" data-test="reviews">
+        <section class="reviews">
           <h2 class="reviews__title title">Отзывы</h2>
           <div class="reviews__slider-wrapper">
             <div class="reviews__slider swiper" data-slider="reviews-slider">
@@ -641,126 +660,119 @@
               </div>
             </div>
             <div class="reviews__btn-prev btn btn--slider" data-reviews-button="prev-button">
-              <svg width="18" height="34">
+              <svg width="18" height="34" role="img">
                 <use href="img/sprite.svg#left-button-slider-icon"></use>
               </svg>
             </div>
             <div class="reviews__btn-next btn btn--slider" data-reviews-button="next-button">
-              <svg width="18" height="34">
+              <svg width="18" height="34" role="img">
                 <use href="img/sprite.svg#right-button-slider-icon"></use>
               </svg>
             </div>
           </div>
         </section>
       </div>
-      <div class="container container__half-width-wrapper">
-        <div class="container container__form container--background-dark">
-          <section class="free-lesson">
-            <h2 class="free-lesson__title title">Бесплатное занятие</h2>
-            <form class="free-lesson__form form" action="https://echo.htmlacademy.ru" method="post">
-              <div class="form__input-wrapper">
-                <label class="form__label">
-                  <input class="form__input input" type="text" name="name" placeholder="Имя" required>
-                </label>
-                <label class="form__label">
-                  <input class="form__input input" type="text" name="phone" placeholder="Телефон" required>
-                </label>
-              </div>
-              <button class="form__btn btn btn--submit" type="submit">Отправить</button>
-            </form>
-          </section>
-        </div>
-        <div class="container container__contacts">
-          <section class="contacts">
-            <h2 class="contacts__title title">Контакты</h2>
-            <div class="contacts__wrapper">
-              <div class="contacts__item">
-                <h3 class="contacts__item-title title title--contacts">Адрес:</h3>
-                <p class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</p>
-              </div>
-              <div class="contacts__item">
-                <h3 class="contacts__item-title title title--contacts">Телефон:</h3>
-                <a class="contacts__item-link" href="tel:88005555555">8-800-555-55-55</a>
-              </div>
-              <div class="contacts__item">
-                <h3 class="contacts__item-title title title--contacts">График работы:</h3>
-                <p class="contacts__item-text">Пн-ВС: с 8:00 до 22:00</p>
-              </div>
-              <div class="contacts__item">
-                <h3 class="contacts__item-title title title--contacts">Email:</h3>
-                <a class="contacts__item-link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
-              </div>
-            </div>
-
-          </section>
-        </div>
-      </div>
-      <div class="container container__footer container--footer">
-        <footer data-test="footer">
-          <div class="footer__wrapper">
-            <a class="footer__logo" href="">
-              <img src="img/svg/logo.svg" width="120" height="26" alt="Логотип Supergym.">
-            </a>
-            <ul class="footer__navigation-list footer-list">
-              <li class="footer-list__item">
-                <a class="footer__link" href="#">Услуги</a>
-              </li>
-              <li class="footer-list__item">
-                <a class="footer__link" href="#tickets">Абонементы</a>
-              </li>
-              <li class="footer-list__item">
-                <a class="footer__link" href="#promotions">Акции</a>
-              </li>
-              <li class="footer-list__item">
-                <a class="footer__link" href="#">Тренеры</a>
-              </li>
-              <li class="footer-list__item">
-                <a class="footer__link" href="#">Расписание</a>
-              </li>
-            </ul>
-            <ul class="footer__social-list social-list">
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <svg width="15" height="15">
-                    <use href="img/sprite.svg#vk-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Вконтакте</span>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <svg width="15" height="15">
-                    <use href="img/sprite.svg#ok-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Одноклассники</span>
-                </a>
-              </li>
-              <li class="social-list__item">
-                <a class="social-list__link" href="#">
-                  <svg width="15" height="15">
-                    <use href="img/sprite.svg#reddit-icon"></use>
-                  </svg>
-                  <span class="visually-hidden">Reddit</span>
-                </a>
-              </li>
-            </ul>
-
+      <div data-test="footer">
+        <div class="container container__half-width-wrapper">
+          <div class="container container__form container--background-dark">
+            <section class="free-lesson">
+              <h2 class="free-lesson__title title">Бесплатное занятие</h2>
+              <form class="free-lesson__form form" action="https://echo.htmlacademy.ru" method="post">
+                <div class="form__input-wrapper">
+                  <label class="form__label">
+                    <span class="visually-hidden">Имя</span>
+                    <input class="form__input input" type="text" name="name" placeholder="Имя" required>
+                  </label>
+                  <label class="form__label">
+                    <span class="visually-hidden">Телефон</span>
+                    <input class="form__input input" type="text" name="phone" placeholder="Телефон" required>
+                  </label>
+                </div>
+                <button class="form__btn btn btn--submit" type="submit">Отправить</button>
+              </form>
+            </section>
           </div>
-        </footer>
+          <div class="container container__contacts">
+            <section class="contacts">
+              <h2 class="contacts__title title">Контакты</h2>
+              <div class="contacts__wrapper">
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title title title--contacts">Адрес:</h3>
+                  <p class="contacts__item-text">г. Омск, ул. 60 лет Октября, 7</p>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title title title--contacts">Телефон:</h3>
+                  <a class="contacts__item-link" href="tel:88005555555">8-800-555-55-55</a>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title title title--contacts">График работы:</h3>
+                  <p class="contacts__item-text">Пн-ВС: с 8:00 до 22:00</p>
+                </div>
+                <div class="contacts__item">
+                  <h3 class="contacts__item-title title title--contacts">Email:</h3>
+                  <a class="contacts__item-link" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                </div>
+              </div>
 
-      </div>
+            </section>
+          </div>
+        </div>
+    </main>
+    <div class="container container__footer container--footer">
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <a class="footer__logo" href="">
+            <img src="img/svg/logo.svg" width="120" height="26" alt="Логотип Supergym.">
+          </a>
+          <ul class="footer__navigation-list footer-list">
+            <li class="footer-list__item">
+              <a class="footer__link" href="#">Услуги</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer__link" href="#tickets">Абонементы</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer__link" href="#promotions">Акции</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer__link" href="#">Тренеры</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer__link" href="#">Расписание</a>
+            </li>
+          </ul>
+          <ul class="footer__social-list social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <svg width="15" height="15" role="img">
+                  <use href="img/sprite.svg#vk-icon"></use>
+                </svg>
+                <span class="visually-hidden">Вконтакте</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <svg width="15" height="15" role="img">
+                  <use href="img/sprite.svg#ok-icon"></use>
+                </svg>
+                <span class="visually-hidden">Одноклассники</span>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="#">
+                <svg width="15" height="15" role="img">
+                  <use href="img/sprite.svg#reddit-icon"></use>
+                </svg>
+                <span class="visually-hidden">Reddit</span>
+              </a>
+            </li>
+          </ul>
 
-
-
+        </div>
+      </footer>
+    </div>
   </div>
-
-  </main>
-  <footer>
-    <div class="container"></div>
-  </footer>
   </div>
-
-
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

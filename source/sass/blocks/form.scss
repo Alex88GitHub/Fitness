@@ -18,12 +18,13 @@
   }
 
   &--error {
-    color: $color-error;
+    // color: $color-error;
     border: none;
   }
 }
 
 .form__label--error .pristine-error {
+  color: $color-error;
   border-top: 1px solid $color-error;
 }
 
@@ -49,4 +50,8 @@
     opacity: 0.3;
     pointer-events: none;
   }
+}
+
+.form__label--error input {
+  border: none;
 }

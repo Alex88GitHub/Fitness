@@ -2,6 +2,10 @@
   position: relative;
   z-index: 2;
   padding: 120px 0 120px;
+
+  @include vp-1365 {
+    padding: 100px 0 100px;
+  }
 }
 
 .tickets__time-list-wrapper {
@@ -20,10 +24,13 @@
 .tickets__visits-list {
   display: flex;
   justify-content: space-between;
-  // grid-template-columns: repeat(3, 1fr);
-  // grid-template-rows: auto;
-  // column-gap: 40px;
-  // row-gap: 40px;
+
+  @include vp-1365 {
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 40px;
+    justify-content: center;
+  }
 }
 
 .tickets__bg {
